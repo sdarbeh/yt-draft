@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/yt-draft/static/css/main.f84c646a.chunk.css",
-    "main.js": "/yt-draft/static/js/main.73545baf.chunk.js",
-    "main.js.map": "/yt-draft/static/js/main.73545baf.chunk.js.map",
+    "main.css": "/yt-draft/static/css/main.1eac76fe.chunk.css",
+    "main.js": "/yt-draft/static/js/main.5049e961.chunk.js",
+    "main.js.map": "/yt-draft/static/js/main.5049e961.chunk.js.map",
     "runtime-main.js": "/yt-draft/static/js/runtime-main.79f985d8.js",
     "runtime-main.js.map": "/yt-draft/static/js/runtime-main.79f985d8.js.map",
     "static/js/2.fa3244d1.chunk.js": "/yt-draft/static/js/2.fa3244d1.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.04eb0dd6.chunk.js": "/yt-draft/static/js/3.04eb0dd6.chunk.js",
     "static/js/3.04eb0dd6.chunk.js.map": "/yt-draft/static/js/3.04eb0dd6.chunk.js.map",
     "index.html": "/yt-draft/index.html",
-    "static/css/main.f84c646a.chunk.css.map": "/yt-draft/static/css/main.f84c646a.chunk.css.map",
+    "static/css/main.1eac76fe.chunk.css.map": "/yt-draft/static/css/main.1eac76fe.chunk.css.map",
     "static/js/2.fa3244d1.chunk.js.LICENSE.txt": "/yt-draft/static/js/2.fa3244d1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.79f985d8.js",
     "static/js/2.fa3244d1.chunk.js",
-    "static/css/main.f84c646a.chunk.css",
-    "static/js/main.73545baf.chunk.js"
+    "static/css/main.1eac76fe.chunk.css",
+    "static/js/main.5049e961.chunk.js"
   ]
 }
