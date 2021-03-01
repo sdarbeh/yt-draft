@@ -41,7 +41,7 @@ export default ({ children, pageTitle }: props) => {
           <Link to={client.calculators.main}>Calculators</Link>
         </HeadAction>
         <HeaderContent>
-          <NavLink to={'/'}><Logo /></NavLink>
+          <NavLink to={client.home}><Logo /></NavLink>
           <Navigation />
         </HeaderContent>
       </Header>

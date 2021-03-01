@@ -12,7 +12,7 @@ export default (p: any) => {
   return (
     <SideModal handleClose={p.handleClose}>
       <Content>
-        <NavLink to={'/'} className="nav-logo"><Logo /></NavLink>
+        <NavLink to={client.home} className="nav-logo"><Logo /></NavLink>
         <nav>
           <p className="mnav-t">Navigation</p>
           <div className="mmain">

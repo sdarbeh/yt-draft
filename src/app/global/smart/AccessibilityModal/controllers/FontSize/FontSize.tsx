@@ -36,7 +36,7 @@ export default () => {
         const { value } = e.target
         setFontSize(fontSizeArray[parseInt(value) - 1].name)
     }
-
+    
     return (
         <Container>
             <SizeDemo fontSize={fontSizeArray[0].fontSize.normal}>Aa</SizeDemo>

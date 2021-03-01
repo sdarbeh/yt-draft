@@ -3,6 +3,7 @@ import { Link, NavLink, Redirect, Route, Switch } from 'react-router-dom'
 import { client } from '../../../../../utils/routes/client'
 
 // pages
+import { NotFound } from '../index'
 import { Mortage, Afford, Refinance, Amortization } from './pages'
 
 // items
@@ -32,6 +33,7 @@ export default ({ location: { pathname } }: any) => {
                 <Route path={client.calculators.afford} exact component={Afford} />
                 <Route path={client.calculators.refinance} exact component={Refinance} />
                 <Route path={client.calculators.amortization} exact component={Amortization} />
+                <Route path={'*'} component={() => <NotFound simpleNoLinks />} />
               </Switch>
             </div>
           </div>
