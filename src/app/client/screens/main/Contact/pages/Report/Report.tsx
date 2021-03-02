@@ -1,4 +1,5 @@
 import React from 'react'
+import { contactAssets } from '../../../../../../../assets/public'
 
 // items
 import { ClientContainer } from '../../../../../widgets/smart'
@@ -9,7 +10,7 @@ import { Hero, Heading } from './ReportStyle'
 export default () => {
   return (
     <ClientContainer pageTitle={'Report a Concern'}>
-      <Hero bg={'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'} border>
+      <Hero bg={contactAssets.report_hero} border>
         <h1>Customer Care</h1>
       </Hero>
       <Main>

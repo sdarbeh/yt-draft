@@ -3,6 +3,7 @@ import { Link as L } from 'react-router-dom'
 import { device } from '../../../../../../../utils/constants/mediaQueries'
 import { PageHero } from '../../../../../widgets/basic'
 import { CenteredDiv } from '../../../../../../global/basic'
+import { contactAssets } from '../../../../../../../assets/public'
 
 export const Hero = styled(PageHero)`
   div.content {
@@ -60,6 +61,8 @@ export const OptionCard = styled.div`
   box-shadow: 4px 2px 30px -10px ${p => p.theme.sBravo};
   div:first-child {
     height: 275px;
+    background-position: center;
+    background-size: cover;
   }
   div:nth-child(2) {
     padding: 30px 20px;
@@ -89,7 +92,7 @@ interface o {
 export const Option = styled(OptionCard)`
   background: ${(p: o) => p.t ? p.theme.primary : p.theme.bravo};
   div:first-child {
-    background: center url(${(p: o) => p.bg});
+    background-image: url(${(p: o) => p.bg});
   }
 `
 
@@ -99,7 +102,7 @@ export const General = styled(CenteredDiv)`
     max-width: 600px;
     background: ${p => p.theme.bravo};
     div:first-child {
-      background: center url('https://images.pexels.com/photos/3931440/pexels-photo-3931440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-image: url(${contactAssets.general});
       background-size: cover;
     }
   }

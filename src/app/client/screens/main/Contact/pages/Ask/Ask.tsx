@@ -1,4 +1,5 @@
 import React from 'react'
+import { contactAssets } from '../../../../../../../assets/public'
 
 // items
 import { ClientContainer } from '../../../../../widgets/smart'
@@ -9,7 +10,7 @@ import { Hero, Heading } from './AskStyle'
 export default () => {
   return (
     <ClientContainer pageTitle={'Ask a Question'}>
-      <Hero bg={'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'} border>
+      <Hero bg={contactAssets.gen_hero} border>
         <h1>Ask a Question</h1>
       </Hero>
       <Main>

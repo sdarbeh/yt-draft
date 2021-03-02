@@ -1,4 +1,5 @@
 import React from 'react'
+import { contactAssets } from '../../../../../../../assets/public'
 
 // items
 import { ClientContainer } from '../../../../../widgets/smart'
@@ -8,7 +9,7 @@ import { Hero, Main, Form, End } from './ListStyle'
 export default () => {
   return (
     <ClientContainer pageTitle={'List a Property'}>
-      <Hero bg={'https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}>
+      <Hero bg={contactAssets.list_hero}>
         <h1>List your home with confidence</h1>
         <div className='c-content'>
           <p>With YT properties, you will have the advantage of professional real estate agent who knows the ins and outs of home sales</p>

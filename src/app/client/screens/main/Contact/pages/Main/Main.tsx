@@ -1,6 +1,7 @@
 import React from 'react'
-import { useTranslation } from "react-i18next";
 import { client } from '../../../../../../../utils/routes/client'
+import { contactAssets } from '../../../../../../../assets/public';
+
 // items
 import { ClientContainer } from '../../../../../widgets/smart'
 import { Main } from '../../../../../widgets/basic'
@@ -10,7 +11,7 @@ export default () => {
 
   return (
     <ClientContainer pageTitle={'Contact Us'}>
-      <Hero bg={'https://www.drhorton.com/-/media/Files/Area-Info-Images/OK-Tulsa.ashx?h=1040&w=1980&la=en&hash=4FF82396BBC2976F824B41655DEB5245E8BB60B5'} border>
+      <Hero bg={contactAssets.hero} border>
         <h1>Contact</h1>
       </Hero>
       <Main>
@@ -21,7 +22,7 @@ export default () => {
         </CanWeHelp>
         <OptContainer>
           <Option
-            bg={'https://images.pexels.com/photos/3206114/pexels-photo-3206114.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}
+            bg={contactAssets.find}
             t={false}
           >
             <div />
@@ -32,7 +33,7 @@ export default () => {
             </div>
           </Option>
           <Option
-            bg={'https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}
+            bg={contactAssets.list}
             t
           >
             <div />
