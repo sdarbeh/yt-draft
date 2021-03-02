@@ -2,7 +2,7 @@
   "name": "yt-properties",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sdarbeh.github.io/yt-draft",
+  "homepage": "/",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.9",
