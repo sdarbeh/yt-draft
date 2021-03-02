@@ -62,4 +62,6 @@ export const Link = styled(L)`
   background: ${p => p.theme.primary};
   padding: 10px 20px;
   width: max-content;
+  border-radius: 2px;
+  overflow: hidden;
 `

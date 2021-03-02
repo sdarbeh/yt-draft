@@ -47,6 +47,7 @@ export const Hero = styled.div`
       justify-content: center;
       border-bottom: 5px solid transparent;
       margin-right: 5px;
+      border-radius: 2px 2px 0 0;
       div {
         margin-bottom: -5px;
       }

@@ -34,6 +34,7 @@ export const DoneButton = styled.button`
     width: 80px;
     height: 30px;
     border-radius: 50px;
+    font-weight: 700;
 `
 
 export const Description = styled.div`

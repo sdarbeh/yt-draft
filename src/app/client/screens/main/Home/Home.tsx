@@ -7,7 +7,7 @@ import { ClientContainer } from '../../../widgets/smart'
 import { CenteredDiv } from '../../../../global/basic'
 import { HomeHero, Main } from './HomeStyle'
 // components
-import { About } from './components'
+import { About, Resources } from './components'
 
 export default () => {
   return (
@@ -21,16 +21,13 @@ export default () => {
           <Link to={'*'}>LINK TO SOMETHING</Link>
         </div>
         <div className="hero-l">
-          <button>
-            <span>Learn More</span>
-            <CenteredDiv>{downArrowIcon}</CenteredDiv>
-          </button>
+          <div>{downArrowIcon}</div>
         </div>
       </HomeHero>
       <Main hideNavigator>
         <h3>(Homes goes here)</h3>
         <About />
-        <h3>(Resources goes here)</h3>
+        <Resources />
       </Main>
     </ClientContainer>
   )

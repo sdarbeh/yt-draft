@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Main as M } from '../../../widgets/basic'
-import { device, maxWith } from '../../../../../utils/constants/mediaQueries'
+import { device } from '../../../../../utils/constants/mediaQueries'
+import { homeAssets } from '../../../../../assets/public'
 
 export const HomeHero = styled.div`
   background:
@@ -8,7 +9,7 @@ export const HomeHero = styled.div`
   rgba(0, 0, 0, 0.3), 
   rgba(0, 0, 0, 0.3)
   ),
-  url('https://images.pexels.com/photos/3639540/pexels-photo-3639540.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  url(${homeAssets.hero});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -47,13 +48,12 @@ export const HomeHero = styled.div`
   div.hero-l {
     bottom: 0;
     height: max-content;
-    button {
-      background: ${p => p.theme.alpha};
-      text-transform: uppercase;
-      padding: 10px 17px;
-      display: grid;
-      grid-template-columns: 1fr 15px;
-      column-gap: 10px;
+    div {
+      height: 50px;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
     }
     span, div {
       opacity: .5
@@ -67,14 +67,11 @@ export const HomeHero = styled.div`
 
 export const Main = styled(M)`
   display: grid;
-  row-gap: 75px;
+  row-gap: 100px;
   h3 {
     text-align: center;
   }
-`
-
-
-
-export const SimpCard = styled.div`
-
+  @media ${device.tablet} { 
+    row-gap: 150px;
+  }
 `

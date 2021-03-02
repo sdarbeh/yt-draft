@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device, maxWith } from '../../../../../utils/constants/mediaQueries'
+import { device } from '../../../../../utils/constants/mediaQueries'
 
 export const Container = styled.footer`
   background: ${p => p.theme.sBravo};
@@ -36,6 +36,8 @@ export const Sidebar = styled.div`
   background: ${p => p.theme.primary};
   padding: 30px;
   margin: 0 auto;
+  border-radius: 2px;
+  overflow: hidden;
   a {
     width: max-content;
     font-weight: 600;

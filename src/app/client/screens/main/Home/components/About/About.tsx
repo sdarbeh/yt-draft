@@ -1,58 +1,60 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { homeAssets } from '../../../../../../../assets/public'
 import { device } from '../../../../../../../utils/constants/mediaQueries'
 import { client } from '../../../../../../../utils/routes/client'
 
 // items
 import { CenteredDiv } from '../../../../../../global/basic'
+import { Card as C } from '../style'
 
 
 export default () => {
   return (
-    <Section>
+    <Container>
       <CenteredDiv className="hsec-title">
         <p>YT PROPERTIES</p>
         <p>(SHORT SLOGAN)</p>
       </CenteredDiv>
       <div className="h-cards">
         <Card>
-          <p className="mc-title">Our Passion</p>
-          <div className="mc-content">
-            <div className="mc-i" />
-            <div className="mc-desc">
+          <p className="amc-title">Our Passion</p>
+          <div className="amc-content">
+            <CardImg bg={homeAssets.passion}/>
+            <div className="amc-desc">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
               <Link to={client.about.company}>Learn more</Link>
             </div>
           </div>
         </Card>
         <Card>
-          <p className="mc-title">Frequently Asked Questions</p>
-          <div className="mc-content">
-            <div className="mc-i" />
-            <div className="mc-desc">
+          <p className="amc-title">Frequently Asked Questions</p>
+          <div className="amc-content">
+            <CardImg bg={homeAssets.faq}/>
+            <div className="amc-desc">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
               <Link to={client.about.faqs}>View Our FAQs</Link>
             </div>
           </div>
         </Card>
         <Card>
-          <p className="mc-title">Our Leadership</p>
-          <div className="mc-content">
-            <div className="mc-i" />
-            <div className="mc-desc">
+          <p className="amc-title">Our Leadership</p>
+          <div className="amc-content">
+            <CardImg bg={homeAssets.leadership}/>
+            <div className="amc-desc">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
               <Link to={client.about.team}>Meet our team</Link>
             </div>
           </div>
         </Card>
       </div>
-    </Section>
+    </Container>
   )
 }
 
 
-const Section = styled.div`
+const Container = styled.section`
   &, div.h-cards {
     display: grid;
     row-gap: 40px;
@@ -63,6 +65,11 @@ const Section = styled.div`
     text-transform: uppercase;
     flex-direction: column;
     height: max-content;
+  }
+  div.amc-content {
+    box-shadow: ${p => p.theme.btnShadow};
+    border-radius: 2px;
+    overflow: hidden;
   }
   @media ${device.tablet} {
     grid-template-columns: 200px 1fr;
@@ -81,21 +88,12 @@ const Section = styled.div`
 `
 
 const Card = styled.div`
-  p.mc-title {
+  p.amc-title {
     font-size: ${p => p.theme.fontSize.xlarge};
     padding-bottom: 10px;
     text-transform: uppercase;
   }
-  /* div.mc-content {
-    border-radius: 10px;
-    overflow: hidden;
-  } */
-  div.mc-i {
-    width: 100%;
-    height: 275px;
-    background: gray;
-  }
-  div.mc-desc {
+  div.amc-desc {
     background: ${p => p.theme.primary};
     color: ${p => p.theme.globalColors.black};
     padding: 20px;
@@ -110,4 +108,9 @@ const Card = styled.div`
     padding: 5px 12px;
     width: max-content;
   }
+`
+
+const CardImg = styled(C)`
+  width: 100%;
+  height: 275px;
 `
