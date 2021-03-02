@@ -22,6 +22,7 @@ export const MainContent = styled.div`
   @media ${device.tablet} {
     row-gap: unset;
     grid-template: 'links content';
+    grid-template-columns: 300px 1fr;
     column-gap: 75px;
   }
   div.nf-body {

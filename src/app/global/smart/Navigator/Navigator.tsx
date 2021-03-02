@@ -31,18 +31,18 @@ interface p {
 }
 
 export default ({whiteText, customPaths}: p) => {
-  const { pathname } = window.location
+  const { hash } = window.location
   const [paths, setPaths] = useState<any>([])
+
+  let pathname = hash.replace('#', '')
 
   useEffect(() => {
     let arr: any = []
-    let pathnames = pathname !== '/yt-draft' ? pathname.split('/') : []
+    let pathnames = pathname !== '/' ? pathname.split('/') : []
 
     if (customPaths) {
       pathnames = ['', ...customPaths]
     }
-
-    pathnames = pathnames.filter(x => x !== 'yt-draft')
    
     pathnames.forEach((path: string) => {
       const prevPath = min(pathnames[pathnames.length - 2])
@@ -51,7 +51,7 @@ export default ({whiteText, customPaths}: p) => {
 
       switch (name) {
         case '':
-          arr.push({ name: 'YT Properties', path: '/yt-draft' })
+          arr.push({ name: 'YT Properties', path })
           break;
         case prevPath:
           arr.push({ name: arrow, path: `/${path}` })

@@ -14,7 +14,7 @@ export default withRouter(({ location }: any) => {
   return (
     <MainContent>
       <div className="nf-body">
-        {bestMatch && bestMatch.rating >= 0.6 && bestMatch.rating !== 1.0 && (
+        {bestMatch.rating >= 0.6 && bestMatch.rating !== 1.0 && (
           <Prediction>
             <span>Are you looking for &nbsp;</span>
             <Link to={bestMatch.target}>
