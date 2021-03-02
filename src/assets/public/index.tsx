@@ -21,3 +21,10 @@ export const contactAssets = {
     gen_hero: '/assets/media/contact/hero-gen.png',
     report_hero: '/assets/media/contact/hero-customercare.png'
 }
+
+export const aboutAssets = {
+    hero: '/assets/media/about/hero.png',
+    company: '/assets/media/about/company.png',
+    team: '/assets/media/about/team.png',
+    faq: '/assets/media/about/faqs.png',
+}

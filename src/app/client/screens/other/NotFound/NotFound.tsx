@@ -21,7 +21,7 @@ export default ({ simple, simpleNoLinks }: any) => {
       <Hero bg={'https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'} border>
         <h1>Page Not Found</h1>
       </Hero>
-      <Main customNavPaths={['Page Moved or Not Found']}>
+      <Main>
         <Content />
       </Main>
     </ClientContainer>

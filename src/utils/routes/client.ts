@@ -21,52 +21,58 @@ export const client = {
   },
   // other
   advice: {
-    main: '/advice',
-    glossary: '/advice/real-estate-glossary',
-    buying: '/advice/buying-advice',
-    selling: '/advice/selling-advice',
+    main: "/advice",
+    glossary: "/advice/real-estate-glossary",
+    buying: "/advice/buying-advice",
+    selling: "/advice/selling-advice",
   },
   buying_advice: {
-    buying: '/advice/buying-advice/buying-your-home',
-    closing: '/advice/buying-advice/closing',
-    ownership: '/advice/buying-advice/home-ownership',
-    rent_v_buying: '/advice/buying-advice/renting-vs-buying',
-    afford: '/advice/buying-advice/how-much-can-i-afford',
-    next: '/advice/buying-advice/next-steps',
+    buying: "/advice/buying-advice/buying-your-home",
+    closing: "/advice/buying-advice/closing",
+    ownership: "/advice/buying-advice/home-ownership",
+    rent_v_buying: "/advice/buying-advice/renting-vs-buying",
+    afford: "/advice/buying-advice/how-much-can-i-afford",
+    next: "/advice/buying-advice/next-steps",
   },
   selling_advice: {
-    sale: '/advice/selling-advice/the-sale',
-    closing: '/advice/selling-advice/beyond-closing',
-    started: '/advice/selling-advice/getting-started',
-    contact: '/advice/selling-advice/contact-us',
+    sale: "/advice/selling-advice/the-sale",
+    closing: "/advice/selling-advice/beyond-closing",
+    started: "/advice/selling-advice/getting-started",
+    contact: "/advice/selling-advice/contact-us",
   },
   calculators: {
-    main: '/calculators',
-    mortage: '/calculators/mortage',
-    afford: '/calculators/affordabilty',
-    refinance: '/calculators/refinance',
-    amortization: '/calculators/amortization',
+    main: "/calculators",
+    mortage: "/calculators/mortage",
+    afford: "/calculators/affordabilty",
+    refinance: "/calculators/refinance",
+    amortization: "/calculators/amortization",
   },
   legal: {
     main: "/legal",
-    fair_housing: '/legal/fair-housing-act',
-    fraud_alert: '/legal/fraud-alert',
-    terms: '/legal/terms-and-condition',
-    privacy: '/legal/privacy-policy'
+    fair_housing: "/legal/fair-housing-act",
+    fraud_alert: "/legal/fraud-alert",
+    terms: "/legal/terms-and-condition",
+    privacy: "/legal/privacy-policy",
   },
-  sitemap: '/sitemap',
+  sitemap: "/sitemap",
   // sub
 };
 
 export const getClientRoutesArray = () => {
-  let routes:any = client;
+  let routes: any = client;
   let arr: any = [];
   for (const name in routes) {
     for (const r in routes) {
-      if (name === r && routes[name] !== '/yt-draft') {
-        for (const str in routes[name]) {
-          arr.push(routes[name][str])
+      if (name === r && routes[name]) {
+        
+        if (name === 'sitemap') {
+          arr.push(routes.sitemap);
+        } else {
+          for (const str in routes[name]) {
+            arr.push(routes[name][str]);
+          }
         }
+
       }
     }
   }

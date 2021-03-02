@@ -19,6 +19,7 @@ export const Section = styled.div`
   }
   &, div.m-content {
     display: grid;
+    grid-template-rows: 40px 1fr 45px;
     row-gap: 10px;
   }
   p.title {
@@ -29,14 +30,18 @@ export const Section = styled.div`
     grid-area: content;
   }
   div.m-media {
+    box-shadow: ${p => p.theme.btnShadow};
     grid-area: media;
     height: 125px;
+    border-radius: 2px;
+    overflow: hidden;
     div {
+      background: url(${(p:m) => p.bg});
       width: 100%;
       height: 100%;
-      background: url(${(p:m) => p.bg});
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
     }
   }
   @media ${device.tablet} { 

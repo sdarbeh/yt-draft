@@ -17,27 +17,24 @@ export default () => {
         </p>
       </div>
       <div className='sec-team'>
-        <div className='sec-team-card'>
-          <TeamMemberCard
-            name={'Logan Thompson'}
-            title={'Owner'}
-            image={''}
-          />
-        </div>
-        <div className='sec-team-card'>
-          <TeamMemberCard
-            name={'Caroline George'}
-            title={'Bad bitch'}
-            image={''}
-          />
-        </div>
-        <div className='sec-team-card'>
-          <TeamMemberCard
-            name={'John Doe'}
-            title={'< bruh...'}
-            image={''}
-          />
-        </div>
+        <TeamMemberCard
+          name={'Logan Thompson'}
+          title={'Owner'}
+          description={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+          image={'https://images.pexels.com/photos/2741701/pexels-photo-2741701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}
+        />
+        <TeamMemberCard
+          name={'Caroline George'}
+          title={'Content Creator'}
+          description={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+          image={'https://images.pexels.com/photos/5119214/pexels-photo-5119214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}
+        />
+        <TeamMemberCard
+          name={'John Doe'}
+          title={'Head of Marketing'}
+          description={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+          image={'https://images.pexels.com/photos/2344601/pexels-photo-2344601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}
+        />
       </div>
     </Section>
   )

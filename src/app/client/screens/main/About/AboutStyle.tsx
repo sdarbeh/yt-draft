@@ -25,18 +25,9 @@ export const Section = styled.div`
   }
   div.sec-team {
     margin: 20px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  div.sec-team-card {
-    &:first-child {
-      margin-left: unset;
-    }
-    &:last-child {
-      margin-right: unset;
-    }
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    grid-gap: 10px;
   }
 `
 
