@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { convertPath, getHashPaths } from '../../../../utils/helpers/methods'
 
 interface n {
   w: any;
@@ -23,18 +24,15 @@ const Container = styled.div`
   }
 `
 
-const min = (str: string) => str.split('-').join(' ')
-
 interface p {
   whiteText?: boolean;
   customPaths?: string[]
 }
 
 export default ({whiteText, customPaths}: p) => {
-  const { hash } = window.location
   const [paths, setPaths] = useState<any>([])
 
-  let pathname = hash.replace('#', '')
+  let pathname = getHashPaths()
 
   useEffect(() => {
     let arr: any = []
@@ -45,8 +43,8 @@ export default ({whiteText, customPaths}: p) => {
     }
    
     pathnames.forEach((path: string) => {
-      const prevPath = min(pathnames[pathnames.length - 2])
-      const name = min(path)
+      const prevPath = convertPath(pathnames[pathnames.length - 2])
+      const name = convertPath(path)
       let arrow = ` › ${name}`
 
       switch (name) {

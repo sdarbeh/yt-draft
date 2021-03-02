@@ -19,33 +19,36 @@ export default () => {
       </CenteredDiv>
       <div className="h-cards">
         <Card>
-          <p className="amc-title">Our Passion</p>
-          <div className="amc-content">
-            <CardImg bg={homeAssets.passion}/>
-            <div className="amc-desc">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
-              <Link to={client.about.company}>Learn more</Link>
-            </div>
+          <CardImg bg={homeAssets.passion}>
+            <span>Our Passion</span>
+          </CardImg>
+          <div className="amc-desc">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
+            <Link to={client.about.company}>Learn more</Link>
           </div>
         </Card>
         <Card>
-          <p className="amc-title">Frequently Asked Questions</p>
-          <div className="amc-content">
-            <CardImg bg={homeAssets.faq}/>
-            <div className="amc-desc">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
-              <Link to={client.about.faqs}>View Our FAQs</Link>
+          <CardImg bg={homeAssets.faq}>
+            <div>
+              <span>Frequently</span>
+              <br />
+              <span>Asked</span>
+              <br />
+              <span>Questions</span>
             </div>
+          </CardImg>
+          <div className="amc-desc">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
+            <Link to={client.about.faqs}>View Our FAQs</Link>
           </div>
         </Card>
         <Card>
-          <p className="amc-title">Our Leadership</p>
-          <div className="amc-content">
-            <CardImg bg={homeAssets.leadership}/>
-            <div className="amc-desc">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
-              <Link to={client.about.team}>Meet our team</Link>
-            </div>
+          <CardImg bg={homeAssets.leadership}>
+            <span>Our Leadership</span>
+          </CardImg>
+          <div className="amc-desc">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
+            <Link to={client.about.team}>Meet our team</Link>
           </div>
         </Card>
       </div>
@@ -66,11 +69,6 @@ const Container = styled.section`
     flex-direction: column;
     height: max-content;
   }
-  div.amc-content {
-    box-shadow: ${p => p.theme.btnShadow};
-    border-radius: 2px;
-    overflow: hidden;
-  }
   @media ${device.tablet} {
     grid-template-columns: 200px 1fr;
     column-gap: 50px; 
@@ -88,11 +86,9 @@ const Container = styled.section`
 `
 
 const Card = styled.div`
-  p.amc-title {
-    font-size: ${p => p.theme.fontSize.xlarge};
-    padding-bottom: 10px;
-    text-transform: uppercase;
-  }
+  box-shadow: ${p => p.theme.btnShadow};
+  border-radius: 2px;
+  overflow: hidden;
   div.amc-desc {
     background: ${p => p.theme.primary};
     color: ${p => p.theme.globalColors.black};
@@ -113,4 +109,5 @@ const Card = styled.div`
 const CardImg = styled(C)`
   width: 100%;
   height: 275px;
+  font-size: ${p => p.theme.fontSize.jumbo};
 `

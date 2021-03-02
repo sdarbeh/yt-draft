@@ -10,7 +10,7 @@ export const Main = styled(M)`
   .resource-content {
     display: grid;
     row-gap: 30px;
-    grid-template: 'main' 'resource';
+    grid-template: 'resource' 'main';
     @media ${device.tablet} {
       row-gap: unset;
       grid-template: 'resource main';

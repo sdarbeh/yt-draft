@@ -3,13 +3,14 @@ import { Link, withRouter } from "react-router-dom";
 import strSimilarity from 'string-similarity'
 import { getClientRoutesArray } from '../../../../../../../utils/routes/client'
 import { client } from "../../../../../../../utils/routes/client";
+import { convertPath } from "../../../../../../../utils/helpers/methods";
 
 import { Moved } from "../index";
 import { MainContent, PopularLinks, Prediction } from "../../NotFoundStyle";
 
 export default withRouter(({ location }: any) => {
   const { bestMatch } = strSimilarity.findBestMatch(location.pathname, getClientRoutesArray())
-  const prediction = bestMatch.target.split('/').slice(-1)[0].split('-').join(' ')
+  const prediction = convertPath(bestMatch.target.split('/').slice(-1)[0])
 
   return (
     <MainContent>

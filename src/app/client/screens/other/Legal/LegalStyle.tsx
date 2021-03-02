@@ -16,3 +16,23 @@ export const Main = styled(M)`
     margin-top: 5px;
   }
 `
+
+export const lorem = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, deserunt ex reprehenderit possimus qui laboriosam incidunt sed quisquam ipsa ut alias enim nesciunt sequi dolor dolorem culpa exercitationem. Eius, sapiente?'
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  row-gap: 30px;
+  h2 {
+    font-size: ${p => p.theme.fontSize.jumbo};
+    margin: 0;
+  }
+  span, a {
+    color: ${p => p.theme.primary};
+    font-weight: 700;
+  }
+  div.legal-content {
+    display: grid;
+    row-gap: 10px;
+  }
+`

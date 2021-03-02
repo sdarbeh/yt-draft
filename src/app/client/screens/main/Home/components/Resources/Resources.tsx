@@ -60,24 +60,14 @@ const Container = styled.section`
 `
 
 const Card = styled(C)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   max-width: 650px;
   max-height: 650px;
-  font-weight: 700;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  text-shadow: 2px 2px 3px rgb(0 0 0 / 23%);
   &, a {
     width: 100%;
     height: 100%;
-  }
-  div {
-    transition: all .3s;
-    text-align: center;
   }
   a {
     position: absolute;
@@ -86,13 +76,10 @@ const Card = styled(C)`
   }
   &:hover {
     div.rmc-crdo {
-      transform: scale(1.05) rotate(-3deg);
+      transform: scale(1.03) rotate(-3deg);
     }
     div.rmc-crde {
-      transform: scale(1.05) rotate(3deg);
+      transform: scale(1.03) rotate(3deg);
     }
-  }
-  @media ${device.tablet} {
-    font-size: ${p => p.theme.fontSize.jumbo};
   }
 `

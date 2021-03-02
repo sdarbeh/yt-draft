@@ -1,11 +1,18 @@
 import React from 'react'
+
 import { PageTitle } from '../../../../../../global/smart'
+import { Section } from '../../AboutStyle'
 
 export default () => {
   return (
-    <div>
+    <Section>
       <PageTitle title={'About Us - FAQs'} />
-      <h1>Frequently Asked Questions</h1>
-    </div>
+      <div className='title'>
+        <p>Frequently Asked Questions</p>
+      </div>
+      <div className='sec-content'>
+        <p>(FAQs goes here)</p>
+      </div>
+    </Section>
   )
 }

@@ -11,7 +11,10 @@ export const Main = styled(M)`
 export const Section = styled.div`
   border-bottom: 1px solid ${p => p.theme.bravo};
   padding: 20px 0;
-  p.title {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  row-gap: 30px;
+  div.title {
     font-size: ${p => p.theme.fontSize.jumbo};
     font-weight: 700;
   } 

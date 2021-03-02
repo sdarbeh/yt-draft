@@ -2,11 +2,7 @@ import styled from 'styled-components'
 import { Link as L } from 'react-router-dom'
 import { device } from '../../../../../../../utils/constants/mediaQueries'
 import { PageHero } from '../../../../../widgets/basic'
-
-interface o {
-  t: boolean;
-  theme: any;
-}
+import { CenteredDiv } from '../../../../../../global/basic'
 
 export const Hero = styled(PageHero)`
   div.content {
@@ -58,14 +54,12 @@ export const Link = styled(L)`
   }
 `
 
-export const Option = styled.div`
-  background: ${(p: o) => p.t ? p.theme.primary : p.theme.bravo};
+export const OptionCard = styled.div`
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 4px 2px 30px -10px ${p => p.theme.sBravo};
   div:first-child {
     height: 275px;
-    background: center url(${(p: o) => p.t ? 'https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260' : 'https://images.pexels.com/photos/3206114/pexels-photo-3206114.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'});
   }
   div:nth-child(2) {
     padding: 30px 20px;
@@ -83,6 +77,30 @@ export const Option = styled.div`
     grid-template-columns: 200px 1fr;
     div:first-child {
       height: 100%;
+    }
+  }
+`
+interface o {
+  t: boolean;
+  bg: string;
+  theme: any;
+}
+
+export const Option = styled(OptionCard)`
+  background: ${(p: o) => p.t ? p.theme.primary : p.theme.bravo};
+  div:first-child {
+    background: center url(${(p: o) => p.bg});
+  }
+`
+
+export const General = styled(CenteredDiv)`
+  margin: 50px 0;
+  div.general-q-card {
+    max-width: 600px;
+    background: ${p => p.theme.bravo};
+    div:first-child {
+      background: center url('https://images.pexels.com/photos/3931440/pexels-photo-3931440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
     }
   }
 `

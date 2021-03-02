@@ -1,5 +1,5 @@
 export const homeAssets = {
-    hero: '/assets/media/home/_hero.png',
+    hero: '/assets/media/home/hero.png',
 
     faq: '/assets/media/home/about-faq.png',
     leadership: '/assets/media/home/about-leadership.png',

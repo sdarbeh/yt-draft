@@ -36,6 +36,7 @@ export default () => {
           <div className="flm">
             <p className="fl-t">General</p>
             <div>
+              <Link to={client.about.faqs}>Frequently Asked Questions</Link>
               <Link to={client.legal.fair_housing}>Fair Housing Act</Link>
               <Link to={client.legal.fraud_alert}>Fraud Alert</Link>
             </div>

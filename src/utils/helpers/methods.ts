@@ -10,19 +10,9 @@ export const clearCookies = () => {
   Cookies.remove(font_cookie);
 };
 
-export const objToArr = (obj: any) =>
-  Object.keys(obj).map((key) => [Number(key), obj[key]]);
+export const getHashPaths = () => {
+  const { hash } = window.location
+  return hash.replace('#', '')
+}
 
-export const isObjEmpty = (obj: any) => Object.keys(obj).length === 0;
-
-export const routeActive = (route: string, path: string) =>
-  route === path ? 1 : 0;
-
-export const censorWord = (str: string) => {
-  return str[0] + "*".repeat(str.length - 2) + str.slice(-1);
-};
-
-export const censorEmail = (email: string) => {
-  const arr = email.split("@");
-  return censorWord(arr[0]) + "@" + censorWord(arr[1]);
-};
+export const convertPath = (path: string) => path.split('-').join(' ')
