@@ -1,64 +1,100 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { useForm } from 'react-hook-form'
+import { cash, decimal, term } from '../../components/options';
 // items
 import { CalcContainer } from '../../components'
-import { Input } from '../../../../../../global/form'
+import { FormButton, Input } from '../../../../../../global/form'
 
 export default () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  const submit = (d: any) => {
+    alert('Calculator not functional yet :)')
+    console.log(d);
+  }
+
   return (
     <Container
       pageTitle='Refinance - Calculators'
       title='Refinance Calculator'
     >
-      <div className="c-grid">
-        <p className="c-grid-t">Mortage Information:</p>
-        <div>
-          <Input
-            element='input'
-            name='Current loan balance ($)'
-            placeholder='215800'
-          />
+      <form action="POST" onSubmit={handleSubmit(submit)}>
+        <div className="c-grid">
+          <p className="c-grid-t">Mortage Information:</p>
+          <div>
+            <Input
+              element='input'
+              displayName='Current loan balance ($)'
+              name='balance'
+              placeholder='215800'
+              options={cash.options}
+              refs={register(cash.validator)}
+            />
+          </div>
+          <div className="calc-f-med">
+            <Input
+              element='input'
+              displayName='Current Interest rate (%)'
+              name='cur_rate'
+              placeholder='3.92'
+              options={decimal.options}
+              refs={register(decimal.validator)}
+            />
+          </div>
         </div>
-        <div className="calc-f-med">
-          <Input
-            element='input'
-            name='Current Interest rate (%)'
-            placeholder='3.92'
-          />
+        <div className="c-grid">
+          <p className="c-grid-t">Refinance Information:</p>
+          <div className="calc-f-min">
+            <Input
+              element='input'
+              displayName='New interest rate (%)'
+              name='new_rate'
+              placeholder='3.92'
+              options={decimal.options}
+              refs={register(decimal.validator)}
+            />
+          </div>
+          <div>
+            <Input
+              element='input'
+              displayName='Estimated property value ($)'
+              name='property'
+              placeholder='275100'
+              options={cash.options}
+              refs={register(cash.validator)}
+            />
+          </div>
+          <div>
+            <Input
+              element='input'
+              displayName='Estimated loan amount ($)'
+              name='loan'
+              placeholder='2163'
+              options={cash.options}
+              refs={register(cash.validator)}
+            />
+          </div>
+          <div className="calc-f-med">
+            <Input
+              element='select'
+              displayName='Mortage period (years)'
+              name='term'
+              selectOptions={term.select}
+              refs={register(term.validator)}
+            />
+          </div>
         </div>
-      </div>
-      <div className="c-grid">
-        <p className="c-grid-t">Refinance Information:</p>
-        <div className="calc-f-min">
-          <Input
-            element='input'
-            name='New interest rate (%)'
-            placeholder='3.92'
-          />
+        <div className="calc-btns">
+          <button
+            className="calc-reset"
+            onClick={reset}>
+            Reset</button>
+          <div>
+            <FormButton text={'Calculate'} />
+          </div>
         </div>
-        <div>
-          <Input
-            element='input'
-            name='Estimated property value ($)'
-            placeholder='275100'
-          />
-        </div>
-        <div>
-          <Input
-            element='input'
-            name='Estimated loan amount ($)'
-            placeholder='2163'
-          />
-        </div>
-        <div className="calc-f-med">
-          <Input
-            element='select'
-            name='Mortage period (years)'
-            selectOptions={['25', '30', '35', '40']}
-          />
-        </div>
-      </div>
+      </form>
     </Container>
   )
 }

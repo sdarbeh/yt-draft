@@ -12,10 +12,11 @@ interface props {
     name: string;
     placeholder?: string;
     selectOptions?: string[];
+    options?: any;
 }
 
 export default (p: props) => {
-    const { displayName, element, name, type, refs, disabled, selectOptions, ...r } = p
+    const { displayName, element, name, type, refs, disabled, selectOptions, options, ...r } = p
     const htmlName = replaceSpace(p.name, '_').toLowerCase()
     return (
         <Container>
@@ -26,6 +27,7 @@ export default (p: props) => {
                     name={htmlName}
                     ref={refs}
                     readOnly={disabled}
+                    {...options}
                     {...r}
                 />
             )}
@@ -37,6 +39,8 @@ export default (p: props) => {
                     ref={refs}
                     autoComplete={"no"}
                     readOnly={disabled}
+                    {...options}
+                    {...baseOptions(name)}
                     {...r}
                 />
             )}
@@ -44,6 +48,8 @@ export default (p: props) => {
                 <select
                     name={name}
                     id={htmlName}
+                    ref={refs}
+                    {...options}
                     {...r}
                 >
                     {selectOptions?.map((o: string, i) => (
@@ -58,4 +64,17 @@ export default (p: props) => {
             )}
         </Container>
     )
+}
+
+const baseOptions = (name: string) => {
+    let opts = {}
+    switch (name) {
+        case 'Phone':
+            opts = {
+                type: 'tel',
+                pattern: '[0-9]{3}[0-9]{3}[0-9]{4}',
+                maxLength: '12'
+            }
+    }
+    return opts
 }

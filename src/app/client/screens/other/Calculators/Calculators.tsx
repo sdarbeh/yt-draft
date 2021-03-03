@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { Link, NavLink, Redirect, Route, Switch } from 'react-router-dom'
+import React from 'react'
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom'
 import { client } from '../../../../../utils/routes/client'
 
 // pages
@@ -39,6 +39,8 @@ export default ({ location: { pathname } }: any) => {
           </div>
           <div className="calc-legal">
             <span>Calculators provided for estimating purposes only. Consult with your lender to determine precise payment requirements.</span>
+            <br />
+            <span>Navigating to another tab will clear calculated results.</span>
           </div>
         </Main>
       </Container>

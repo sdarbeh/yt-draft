@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-
+import { legalAssets } from '../../../../../assets/public'
 // pages
 import { NotFound } from '../../other'
 import { Main as Home, Terms, Privacy, FairHousing, FraudAlert } from './pages'
@@ -20,7 +20,7 @@ export default (p: any) => {
   return (
     <ClientContainer pageTitle={'Legal Notices'}>
       <PageHero
-        bg={'https://images.pexels.com/photos/5516226/pexels-photo-5516226.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}
+        bg={legalAssets.hero}
         title={'Legal Notices'}
         withNav
       >

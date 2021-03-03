@@ -1,17 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useTranslation } from "react-i18next";
+import { sitemapAssets } from '../../../../../assets/public';
 import { client } from '../../../../../utils/routes/client'
 // items
 import { ClientContainer } from '../../../widgets/smart'
 import { Hero, Main } from './SitemapStyle'
 
-
 export default () => {
 
   return (
     <ClientContainer pageTitle={'Sitemap'}>
-      <Hero bg={'https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'} border>
+      <Hero bg={sitemapAssets.hero} border>
         <h1>Sitemap</h1>
       </Hero>
       <Main>

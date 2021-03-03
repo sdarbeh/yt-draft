@@ -92,5 +92,6 @@ const Container = styled.div`
     color: ${p => p.theme.primary};
     font-weight: bold;
     text-decoration: unset;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 23%);
   }
 `

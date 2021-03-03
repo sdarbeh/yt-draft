@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { notFoundAssets } from '../../../../../assets/public'
 // items
 import { ClientContainer } from '../../../widgets/smart'
 import { Main } from '../../../widgets/basic'
@@ -18,7 +18,7 @@ export default ({ simple, simpleNoLinks }: any) => {
 
   return (
     <ClientContainer pageTitle={'404 - Page Not Found'}>
-      <Hero bg={'https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'} border>
+      <Hero bg={notFoundAssets.hero} border>
         <h1>Page Not Found</h1>
       </Hero>
       <Main>

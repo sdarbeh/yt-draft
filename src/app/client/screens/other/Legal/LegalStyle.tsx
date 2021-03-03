@@ -17,7 +17,7 @@ export const Main = styled(M)`
   }
 `
 
-export const lorem = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, deserunt ex reprehenderit possimus qui laboriosam incidunt sed quisquam ipsa ut alias enim nesciunt sequi dolor dolorem culpa exercitationem. Eius, sapiente?'
+export const lorem = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, deserunt ex reprehenderit possimus qui laboriosam incidunt sed quisquam ipsa ut alias enim nesciunt sequi dolor dolorem culpa exercitationem. Eius, sapiente? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, deserunt ex reprehenderit possimus qui laboriosam incidunt sed quisquam ipsa ut alias enim nesciunt sequi dolor dolorem culpa exercitationem. Eius, sapiente? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, deserunt ex reprehenderit possimus qui laboriosam incidunt sed quisquam ipsa ut alias enim nesciunt sequi dolor dolorem culpa exercitationem. Eius, sapiente?'
 
 export const Container = styled.div`
   display: grid;

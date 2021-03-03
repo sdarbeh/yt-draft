@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { client } from '../../../../../utils/routes/client'
 
+import { resourceAssets } from '../../../../../assets/public'
 // pages
 import { NotFound } from '../../other'
 import { Buying, Selling, Glossary } from './pages'
@@ -21,7 +22,7 @@ export default ({ location: { pathname } }: any) => {
   return (
     <ClientContainer pageTitle={'Home Resources'}>
       <PageHero
-        bg={'https://images.pexels.com/photos/5516226/pexels-photo-5516226.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}
+        bg={resourceAssets.hero}
         title={'Home Resources'}
         withNav
       >

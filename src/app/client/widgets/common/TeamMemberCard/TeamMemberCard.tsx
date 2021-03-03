@@ -39,7 +39,7 @@ const Container = styled.div`
   div.tmc-banner {
     box-shadow: 0px 7px 17px -5px ${p => p.theme.bravo};
     background: ${p => p.theme.bravo};
-    border: 1px solid ${p => rgbToRgba(p.theme.charlie, .01)};
+    border: 1px solid ${p => rgbToRgba(p.theme.primary, .05)};
     width: 100%;
     height: 100%;
     border-radius: 5px;

@@ -14,6 +14,14 @@ export const Hero = styled(PageHero)`
   }
 `
 
+export const Content = styled.div`
+  @media ${device.tablet} {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 40px;
+  }
+`
+
 export const Heading = styled.div`
   margin-bottom: 50px;
   h2 {

@@ -28,3 +28,19 @@ export const aboutAssets = {
     team: '/assets/media/about/team.png',
     faq: '/assets/media/about/faqs.png',
 }
+
+export const resourceAssets = {
+    hero: '/assets/media/resource/hero.png',
+}
+
+export const legalAssets = {
+    hero: '/assets/media/legal/hero.png',
+}
+
+export const notFoundAssets = {
+    hero: '/assets/media/404/hero.png',
+}
+
+export const sitemapAssets = {
+    hero: '/assets/media/sitemap/hero.png',
+}
