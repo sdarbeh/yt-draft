@@ -10,7 +10,7 @@ export default () => {
         <p className="legal-s-d">YT Properties LLC Terms & Conditions</p>
       </div>
       <div>
-        <Link className="legal-s-t" to={client.legal.terms}>Privacy Policy</Link>
+        <Link className="legal-s-t" to={client.legal.privacy}>Privacy Policy</Link>
         <p className="legal-s-d">Privacy Statement (YTP DOMAIN)</p>
       </div>
       <div>

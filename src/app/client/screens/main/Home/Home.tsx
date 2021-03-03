@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { downArrowIcon } from '../../../../../assets/icons/widgets'
 // items
 import { ClientContainer } from '../../../widgets/smart'
-import { CenteredDiv } from '../../../../global/basic'
 import { HomeHero, Main } from './HomeStyle'
 // components
 import { About, Resources } from './components'
