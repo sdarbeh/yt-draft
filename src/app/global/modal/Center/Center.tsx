@@ -1,8 +1,8 @@
+import { usePageScroll } from 'hooks'
+import { useThemeMode } from 'hooks/theme'
 import React, { useEffect } from 'react'
+import { rgbToRgba } from 'utils/helpers/color'
 
-import { useThemeMode } from '../../../../hooks/theme'
-import { usePageScroll } from '../../../../hooks'
-import { rgbToRgba } from '../../../../utils/helpers/color'
 //items
 import { Container, Backdrop } from './CenterStyle'
 

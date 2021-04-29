@@ -19,23 +19,21 @@ export default () => {
 const Container = styled.nav`
   margin-left: 50px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  div.nav-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
+  &, .nav-content {
+    display: flex;
+    align-items: center;
   }
   a {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
+    padding-right: 20px;
   }
-  a.active {
+  .active {
     color: ${props => props.theme.primary};
     font-weight: 700;
   }
-  div.nav-language {
+  .nav-language {
     margin: 0 0 0 auto;
   }
   button {

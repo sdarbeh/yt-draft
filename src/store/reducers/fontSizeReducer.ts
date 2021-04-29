@@ -1,9 +1,7 @@
 import Cookies from "js-cookie";
-
-import { SET_FONT_SIZE } from "../actions/fontSizeAction";
-
-import { font_cookie } from "../../utils/constants/app";
-import { defaultFontSize, fontSizes } from "../../utils/Theme/fontSizes";
+import { SET_FONT_SIZE } from "store/actions/fontSizeAction";
+import { font_cookie } from "utils/constants/app";
+import { fontSizes, defaultFontSize } from "utils/Theme/fontSizes";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state: any, action: any) => {

@@ -1,5 +1,0 @@
-export { default as Home } from './Home/Home'
-export { default as About } from './About/About'
-export { default as Properties } from './Properties/Properties'
-export { default as Contact } from './Contact'
-export { default as NotFound } from '../other/NotFound/NotFound'

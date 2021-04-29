@@ -1,9 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../../store";
-
-import { setFontSize } from "../../store/actions/fontSizeAction";
-
-import { defaultFontSize, fontSizes, getfontSizesArray } from '../../utils/Theme/fontSizes'
+import { RootState } from "store";
+import { setFontSize } from "store/actions/fontSizeAction";
+import { getfontSizesArray, fontSizes, defaultFontSize } from "utils/Theme/fontSizes";
 
 export default () => {
   const fontSizeState: any = useSelector((state: RootState) => state.fontSize);

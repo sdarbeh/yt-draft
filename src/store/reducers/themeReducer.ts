@@ -1,9 +1,7 @@
 import Cookies from "js-cookie";
-
-import { SET_THEME_MODE } from "../actions/themeAction";
-import { getThemeModes } from "../../utils/Theme/colors/themeModes";
-
-import { theme_cookie } from "../../utils/constants/app";
+import { SET_THEME_MODE } from "store/actions/themeAction";
+import { theme_cookie } from "utils/constants/app";
+import { getThemeModes } from "utils/Theme/colors/themeModes";
 
 interface actionInterface {
   type: string;

@@ -1,15 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../../store";
-
-import { setThemeMode } from "../../store/actions/themeAction";
-import { globalColors, themeColors } from "../../utils/Theme/colors/appColors";
-
-// THEME MODES
-import {
-  getThemeModes,
-  getThemeModesArray,
-  themeModeColors
-} from "../../utils/Theme/colors/themeModes";
+import { RootState } from "store";
+import { setThemeMode } from "store/actions/themeAction";
+import { themeColors, globalColors } from "utils/Theme/colors/appColors";
+import { themeModeColors, getThemeModes, getThemeModesArray } from "utils/Theme/colors/themeModes";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {

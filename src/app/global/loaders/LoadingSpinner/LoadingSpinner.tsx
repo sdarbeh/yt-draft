@@ -1,8 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
+import { useThemeMode } from "hooks/theme";
 import React from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
-import { useThemeMode } from '../../../../hooks/theme'
 import { Container } from './LoadingSpinnerStyle'
 
 interface props {

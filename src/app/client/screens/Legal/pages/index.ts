@@ -1,0 +1,5 @@
+export { default as Home } from './Main'
+export { default as FairHousing } from './FairHousing'
+export { default as FraudAlert } from './FraudAlert'
+export { default as Privacy } from './Privacy'
+export { default as Terms } from './Terms'

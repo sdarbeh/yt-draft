@@ -1,5 +1,5 @@
 import React from 'react'
-import { capString, replaceSpace } from '../../../../utils/helpers/text'
+import { replaceSpace, capString } from 'utils/helpers/text'
 // items
 import { Container } from './InputStyle'
 

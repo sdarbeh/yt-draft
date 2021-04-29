@@ -1,7 +1,7 @@
 import React from 'react'
 
 // items
-import { Ellipsis } from '../../loaders'
+import { Ellipsis } from '../index'
 import { Container, Message } from './FullScreenLoaderStyle'
 
 // eslint-disable-next-line import/no-anonymous-default-export

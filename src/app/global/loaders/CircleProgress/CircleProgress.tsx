@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 // https://github.com/kevinsqi/react-circular-progressbar#readme
-import { useThemeMode } from '../../../../hooks/theme'
+import { useThemeMode } from 'hooks/theme';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
 interface props {

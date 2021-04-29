@@ -2,6 +2,24 @@ import styled from 'styled-components'
 import { Navigator } from '../../../../global/smart'
 import { device, maxWith } from '../../../../../utils/constants/mediaQueries'
 
+interface p {
+  children: any;
+  withNav?: boolean;
+  hideNavigator?: boolean;
+  whiteNavigatorText?: boolean;
+  customNavPaths?: string[];
+}
+
+export default (p: p) => {
+  const { children, withNav, hideNavigator, whiteNavigatorText, customNavPaths, ...r } = p
+  return (
+    <Main {...r} hide={hideNavigator}>
+      {!hideNavigator && <div className="navigator"><Navigator whiteText={whiteNavigatorText} customPaths={customNavPaths} /></div>}
+      { withNav ? <Nav>{children}</Nav> : children}
+    </Main>
+  )
+}
+
 interface m {
   hide?: boolean;
 }
@@ -23,21 +41,3 @@ const Main = styled.main`
 const Nav = styled.div`
 
 `
-
-interface p {
-  children: any;
-  withNav?: boolean;
-  hideNavigator?: boolean;
-  whiteNavigatorText?: boolean;
-  customNavPaths?: string[];
-}
-
-export default (p: p) => {
-  const { children, withNav, hideNavigator, whiteNavigatorText, customNavPaths, ...r } = p
-  return (
-    <Main {...r} hide={hideNavigator}>
-      {!hideNavigator && <div className="navigator"><Navigator whiteText={whiteNavigatorText} customPaths={customNavPaths} /></div>}
-      { withNav ? <Nav>{children}</Nav> : children}
-    </Main>
-  )
-}

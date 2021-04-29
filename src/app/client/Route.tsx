@@ -1,9 +1,11 @@
 import { Switch, Route } from 'react-router-dom'
-import { client } from '../../utils/routes/client'
+import { client } from 'utils/routes/client'
 
 // screens
-import { Home, About, Properties, Contact, NotFound } from './screens/main'
-import { Advice, Legal, Calculators, Sitemap } from './screens/other'
+import { 
+  Home, About, Properties, Contact, NotFound,
+  Advice, Legal, Calculators, Sitemap
+} from './screens'
 
 export default () => (
   <Switch>

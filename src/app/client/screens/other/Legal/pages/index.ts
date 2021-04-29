@@ -1,5 +1,0 @@
-export { default as Main } from './Main/Main'
-export { default as FairHousing } from './FairHousing/FairHousing'
-export { default as FraudAlert } from './FraudAlert/FraudAlert'
-export { default as Privacy } from './Privacy/Privacy'
-export { default as Terms } from './Terms/Terms'
