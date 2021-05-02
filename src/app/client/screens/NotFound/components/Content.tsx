@@ -35,7 +35,7 @@ export default withRouter(({ location }: any) => {
           </div>
           <div>
             <p className="np-ct">Cash For Your House</p>
-            <Link to={client.contact.list}>List a property</Link>
+            <Link to={client.contact.sell}>List a property</Link>
             <Link to={'*'}>What To Expect</Link>
             <Link to={client.calculators.main}>Mortgage Calculators</Link>
           </div>

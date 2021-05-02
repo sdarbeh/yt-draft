@@ -39,7 +39,7 @@ export default () => {
             <div>
               <h3>List your home</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quia maiores aspernatur, totam aliquid accusantium quaerat odit dolor dolorum placeat ut, perspiciatis nemo recusandae praesentium corrupti exercitationem suscipit expedita ratione?</p>
-              <Link to={client.contact.list}>List with confidence</Link>
+              <Link to={client.contact.sell}>List with confidence</Link>
             </div>
           </Option>
         </OptContainer>

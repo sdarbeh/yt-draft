@@ -1,11 +1,10 @@
 import { useMediaQuery } from '@material-ui/core';
+import { Logo } from 'app/global/basic';
+import { PageTitle, AccessibilityController } from 'app/global/smart';
 import React, { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom'
-import { device } from '../../../../../utils/constants/mediaQueries';
-import { client } from '../../../../../utils/routes/client';
-import { Logo } from '../../../../global/basic';
-// items
-import { AccessibilityController, PageTitle } from '../../../../global/smart';
+import { device } from 'utils/constants/mediaQueries';
+import { client } from 'utils/routes/client';
 import { Navigation, Footer } from '../../common'
 import { Container, Header, HeadAction, HeaderContent, Content } from './ClientContainerStyle'
 

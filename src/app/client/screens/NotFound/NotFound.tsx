@@ -1,5 +1,5 @@
 import { Main } from 'app/client/widgets/basic'
-import { Hero } from 'app/client/widgets/basic/PageHero/PageHeroStyle'
+import { Hero } from 'app/client/widgets/basic/PageHero'
 import { ClientContainer } from 'app/client/widgets/smart'
 import { PageTitle } from 'app/global/smart'
 import { notFoundAssets } from 'assets/public'

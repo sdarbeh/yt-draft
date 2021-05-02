@@ -73,8 +73,8 @@ export default () => {
             <p>Contact Us</p>
             <div>
               <Link to={client.contact.ask}>Ask a Question</Link>
-              <Link to={client.contact.ask}>List a Property</Link>
-              <Link to={client.contact.ask}>Report a concern</Link>
+              <Link to={client.contact.sell}>Sell a Property</Link>
+              <Link to={client.contact.report}>Report a concern</Link>
             </div>
           </div>
           <div className="sm-s">

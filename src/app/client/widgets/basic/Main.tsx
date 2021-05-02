@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Navigator } from '../../../../global/smart'
-import { device, maxWith } from '../../../../../utils/constants/mediaQueries'
+import { Navigator } from 'app/global/smart'
+import { device, maxWith } from 'utils/constants/mediaQueries'
 
 interface p {
   children: any;

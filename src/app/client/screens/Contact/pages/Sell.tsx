@@ -10,7 +10,7 @@ export default () => {
   return (
     <ClientContainer pageTitle={'List a Property'}>
       <Hero bg={contactAssets.list_hero}>
-        <h1>List your home with confidence</h1>
+        <h1>Sell your home with confidence</h1>
         <div className='c-content'>
           <p>With YT properties, you will have the advantage of professional real estate agent who knows the ins and outs of home sales</p>
         </div>

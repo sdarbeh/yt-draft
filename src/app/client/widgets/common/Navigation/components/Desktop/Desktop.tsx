@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { MainLinks } from '../../../../common';
+import { MainLinks } from '../../../index';
 
 export default () => {
   return (

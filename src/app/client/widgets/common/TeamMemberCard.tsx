@@ -1,6 +1,6 @@
+import { CenteredDiv } from 'app/global/basic'
 import styled from 'styled-components'
-import { rgbToRgba } from '../../../../../utils/helpers/color'
-import { CenteredDiv } from '../../../../global/basic'
+import { rgbToRgba } from 'utils/helpers/color'
 interface p {
   name: string;
   title: string;

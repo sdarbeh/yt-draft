@@ -1,9 +1,23 @@
-import React from 'react'
+import { CenteredDiv } from 'app/global/basic'
+import { locationPinIcon } from 'assets/icons/widgets'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { locationPinIcon } from '../../../../../assets/icons/widgets'
-import { client } from '../../../../../utils/routes/client'
-import { CenteredDiv } from '../../../../global/basic'
+import { client } from 'utils/routes/client'
+
+export default () => {
+  return (
+    <Container>
+      <div className="pls-search">
+        <CenteredDiv>{locationPinIcon}</CenteredDiv>
+        <input type="text" name="properties-search" />
+        <button>Search YTP</button>
+      </div>
+      <div className="pls-p">
+        <Link to={client.properties.main}>Properties <span>(212)</span></Link>
+      </div>
+    </Container>
+  )
+}
 
 const Container = styled.div`
   div.pls-search {
@@ -57,18 +71,3 @@ const Container = styled.div`
     }
   }
 `
-
-export default () => {
-  return (
-    <Container>
-      <div className="pls-search">
-        <CenteredDiv>{locationPinIcon}</CenteredDiv>
-        <input type="text" name="properties-search" />
-        <button>Search YTP</button>
-      </div>
-      <div className="pls-p">
-        <Link to={client.properties.main}>Properties <span>(212)</span></Link>
-      </div>
-    </Container>
-  )
-}

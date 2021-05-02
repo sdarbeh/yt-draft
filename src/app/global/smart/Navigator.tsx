@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { convertPath, getHashPaths } from '../../../../utils/helpers/methods'
-import { client, getClientRoutesArray } from '../../../../utils/routes/client'
+import { getHashPaths, convertPath } from 'utils/helpers/methods'
+import { client, getClientRoutesArray } from 'utils/routes/client'
 
 interface p {
   whiteText?: boolean;
@@ -92,6 +92,5 @@ const Container = styled.div`
     color: ${p => p.theme.primary};
     font-weight: bold;
     text-decoration: unset;
-    text-shadow: 2px 2px 3px rgb(0 0 0 / 23%);
   }
 `

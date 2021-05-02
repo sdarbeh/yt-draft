@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device } from '../../../../../utils/constants/mediaQueries'
+import { device } from 'utils/constants/mediaQueries'
 
 export const Container = styled.footer`
   background: ${p => p.theme.sBravo};

@@ -1,8 +1,8 @@
+import { CenteredDiv } from 'app/global/basic'
+import { accessibiltyIcon } from 'assets/icons/widgets'
+import { useAccessibilltyModal } from 'hooks'
 import React from 'react'
 import styled from 'styled-components'
-import { accessibiltyIcon } from '../../../../assets/icons/widgets'
-import { useAccessibilltyModal } from '../../../../hooks'
-import { CenteredDiv } from '../../basic'
 
 interface p {
   fixedIcon?: boolean;

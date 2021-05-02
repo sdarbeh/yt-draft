@@ -15,7 +15,7 @@ export const client = {
   },
   contact: {
     main: "/contact",
-    list: "/contact/list-a-property",
+    sell: "/contact/cash-for-your-house",
     report: "/contact/report-a-concern",
     ask: "/contact/ask-a-question",
   },

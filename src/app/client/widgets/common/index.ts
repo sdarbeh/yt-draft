@@ -1,5 +1,5 @@
 export { default as Footer } from './Footer/Footer'
-export { default as MainLinks } from './MainLinks/MainLinks'
+export { default as MainLinks } from './MainLinks'
 export { default as Navigation } from './Navigation/Navigation'
 export { default as SocialLinks } from './SocialLinks/SocialLinks'
-export { default as TeamMemberCard } from './TeamMemberCard/TeamMemberCard'
+export { default as TeamMemberCard } from './TeamMemberCard'

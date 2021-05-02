@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 import { useMediaQuery } from '@material-ui/core';
-import { device } from '../../../../../utils/constants/mediaQueries';
-
-import { hamburgerMenuIcon, xIcon } from '../../../../../assets/icons/widgets';
 
 // items
 import { Mobile, Desktop } from './components'
+import { xIcon, hamburgerMenuIcon } from 'assets/icons/widgets';
+import { device } from 'utils/constants/mediaQueries';
 
 export default () => {
   const matches = useMediaQuery(device.tablet),
