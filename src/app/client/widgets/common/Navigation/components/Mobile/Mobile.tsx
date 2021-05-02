@@ -1,12 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import { NavLink } from "react-router-dom"
-import { client } from "../../../../../../../utils/routes/client"
-// items
-import { Logo } from "../../../../../../global/basic"
-import { MainLinks } from "../../../index"
-import { SideModal } from "../../../../modal/types"
-import { AccessibilityController } from "../../../../../../global/smart"
+import { Logo } from "app/global/basic"
+import { SideModal } from "app/global/modal"
+import { AccessibilityController } from "app/global/smart"
+import { client } from "utils/routes/client"
+import { MainLinks } from "../../.."
 
 export default (p: any) => {
   return (

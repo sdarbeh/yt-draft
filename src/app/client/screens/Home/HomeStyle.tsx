@@ -2,6 +2,19 @@ import { Main as M } from 'app/client/widgets/basic'
 import { homeAssets } from 'assets/public'
 import styled from 'styled-components'
 import { device } from 'utils/constants/mediaQueries'
+import { getTimeOfDay } from 'utils/helpers/date'
+
+const hero = () => {
+  const time = getTimeOfDay()
+  switch (time) {
+    case 'morning':
+      return homeAssets.hero_day
+    case 'evening':
+      return homeAssets.hero_evening
+    case 'night':
+      return homeAssets.hero_night
+  }
+}
 
 export const HomeHero = styled.div`
   background:
@@ -9,7 +22,7 @@ export const HomeHero = styled.div`
   rgba(0, 0, 0, 0.3), 
   rgba(0, 0, 0, 0.3)
   ),
-  url(${homeAssets.hero});
+  url(${hero()});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

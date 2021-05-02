@@ -3,16 +3,17 @@ import moment from "moment";
 
 // methods relating to dates
 
-export const timeOfDay = () => {
+export const getTimeOfDay = () => {
   const hr = new Date().getHours();
-  if (hr < 12) {
-    return "Good morning";
-  } else if (hr < 20) {
-    return "Good afternoon";
+  
+  if (hr >= 7 && hr < 16) { // 7am - 4pm
+    return 'morning'
+  } else if (hr >= 16 || hr < 21) { //4pm - 9pm
+    return 'evening'
   } else {
-    return "Good evening";
+    return 'night' // 8pm - 7am
   }
-};
+}
 
 export const timeAgo = (date: string) => moment(date).fromNow();
 

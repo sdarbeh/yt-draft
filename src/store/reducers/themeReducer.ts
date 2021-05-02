@@ -1,6 +1,7 @@
 import Cookies from "js-cookie";
 import { SET_THEME_MODE } from "store/actions/themeAction";
 import { theme_cookie } from "utils/constants/app";
+import { getTimeOfDay } from "utils/helpers/date";
 import { getThemeModes } from "utils/Theme/colors/themeModes";
 
 interface actionInterface {
@@ -11,14 +12,16 @@ interface actionInterface {
 const themeModes = getThemeModes();
 
 const getTimeOfDayColor = () => {
-  const hr = new Date().getHours();
+  const time = getTimeOfDay()
   const { light, dim, dark } = themeModes
-  if (hr >= 7 && hr < 16) { // 7am - 4pm
-    return light
-  } else if (hr >= 16 || hr < 21) { //4pm - 9pm
-    return dim
-  } else {
-    return dark // 8pm - 7am
+
+  switch (time) {
+    case 'morning':
+      return light
+    case 'evening':
+      return dim
+    case 'night':
+      return dark
   }
 };
 

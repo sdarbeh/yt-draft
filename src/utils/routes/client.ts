@@ -2,6 +2,7 @@
 export const client = {
   // main
   home: "/",
+  hiw: '/how-it-works',
   about: {
     main: "/about-us",
     company: "/about-us/company",

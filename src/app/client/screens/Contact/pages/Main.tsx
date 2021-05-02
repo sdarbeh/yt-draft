@@ -1,7 +1,6 @@
 import { Main } from 'app/client/widgets/basic'
 import { ClientContainer } from 'app/client/widgets/smart'
 import { contactAssets } from 'assets/public'
-import React from 'react'
 import { client } from 'utils/routes/client'
 
 import { Hero, CanWeHelp, Link, OptContainer, OptionCard, Option, General, Report } from './MainStyle'
@@ -37,9 +36,9 @@ export default () => {
           >
             <div />
             <div>
-              <h3>List your home</h3>
+              <h3>Sell your home</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quia maiores aspernatur, totam aliquid accusantium quaerat odit dolor dolorum placeat ut, perspiciatis nemo recusandae praesentium corrupti exercitationem suscipit expedita ratione?</p>
-              <Link to={client.contact.sell}>List with confidence</Link>
+              <Link to={client.contact.sell}>Sell with confidence</Link>
             </div>
           </Option>
         </OptContainer>

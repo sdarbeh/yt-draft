@@ -5,7 +5,7 @@ export default () => {
   return (
     <ClientContainer pageTitle={'Properties'}>
       <Container>
-        <h1>Properties</h1>
+        <h1>Properties goes here</h1>
       </Container>
     </ClientContainer>
   )
