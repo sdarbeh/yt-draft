@@ -3,7 +3,7 @@ import { client } from 'utils/routes/client'
 
 // screens
 import { 
-  Home, About, Properties, Contact, NotFound,
+  Home, About, Properties, Hiw, Contact, NotFound,
   Advice, Legal, Calculators, Sitemap
 } from './screens'
 
@@ -12,6 +12,7 @@ export default () => (
     <Route path={client.home} exact component={Home} />
     <Route path={client.about.main} component={About} />
     <Route path={client.properties.main} exact component={Properties} />
+    <Route path={client.hiw} component={Hiw} />
     <Route path={client.contact.main} component={Contact} />
 
     <Route path={client.advice.main} component={Advice} />

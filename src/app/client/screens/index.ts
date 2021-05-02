@@ -1,6 +1,7 @@
 export { default as Home } from './Home/Home'
 export { default as About } from './About/About'
 export { default as Properties } from './Properties/Properties'
+export { default as Hiw } from './Hiw/Hiw'
 export { default as Contact } from './Contact'
 export { default as NotFound } from './NotFound/NotFound'
 
