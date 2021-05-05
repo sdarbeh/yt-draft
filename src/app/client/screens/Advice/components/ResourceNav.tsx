@@ -6,7 +6,7 @@ import { device } from 'utils/constants/mediaQueries'
 import { getHashPaths } from 'utils/helpers/methods'
 import { client } from 'utils/routes/client'
 
-const { glossary, buying, selling } = client.advice
+const { glossary, selling } = client.advice
 
 export default (p: any) => {
   const matches = useMediaQuery(device.tablet)
@@ -24,7 +24,7 @@ export default (p: any) => {
   )
 }
 
-const Content = ({ glossaryNav, buyingNav, sellingNav, p }: any) => {
+const Content = ({ glossaryNav, sellingNav, p }: any) => {
   return (
     <Nav {...p}>
       { glossaryNav && (
@@ -32,7 +32,7 @@ const Content = ({ glossaryNav, buyingNav, sellingNav, p }: any) => {
           <NavLink to={glossary} className="rnav-title">Glossary</NavLink>
         </div>
       )}
-      { buyingNav && (
+      {/* { buyingNav && (
         <div>
           <NavLink to={buying} className="rnav-title">Buying Advice</NavLink>
           <div className="rn-links">
@@ -44,7 +44,7 @@ const Content = ({ glossaryNav, buyingNav, sellingNav, p }: any) => {
             <NavLink to={client.buying_advice.next}>Next Steps</NavLink>
           </div>
         </div>
-      )}
+      )} */}
       { sellingNav && (
         <div>
           <NavLink to={selling} className="rnav-title">Selling Advice</NavLink>
@@ -66,7 +66,7 @@ const MobileContainer = (p: any) => {
     <Mobile {...p}>
       <Content
         glossaryNav={path.includes(glossary)}
-        buyingNav={path.includes(buying)}
+        // buyingNav={path.includes(buying)}
         sellingNav={path.includes(selling)}
       />
     </Mobile>

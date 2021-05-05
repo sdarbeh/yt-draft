@@ -45,7 +45,7 @@ export default () => {
             <p>Advice</p>
             <div>
               <Link to={client.advice.glossary}>Glossary</Link>
-              <Link to={client.advice.buying}>Buying</Link>
+              {/* <Link to={client.advice.buying}>Buying</Link> */}
               <Link to={client.advice.selling}>Selling</Link>
             </div>
           </div>

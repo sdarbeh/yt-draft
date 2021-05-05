@@ -75,6 +75,12 @@ export const OptionCard = styled.div`
     font-size: ${p => p.theme.fontSize.small};
     margin: 10px 0 20px 0;
   }
+  &.general-q-card {
+    div:first-child {
+      background-image: url(${contactAssets.general});
+      background-size: cover;
+    }
+  }
   @media ${device.tablet} {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -93,18 +99,6 @@ export const Option = styled(OptionCard)`
   background: ${(p: o) => p.t ? p.theme.primary : p.theme.bravo};
   div:first-child {
     background-image: url(${(p: o) => p.bg});
-  }
-`
-
-export const General = styled(CenteredDiv)`
-  margin: 50px 0;
-  div.general-q-card {
-    max-width: 600px;
-    background: ${p => p.theme.bravo};
-    div:first-child {
-      background-image: url(${contactAssets.general});
-      background-size: cover;
-    }
   }
 `
 

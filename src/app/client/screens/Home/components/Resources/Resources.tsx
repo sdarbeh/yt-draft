@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { client } from '../../../../../../utils/routes/client'
-import { homeAssets } from '../../../../../../assets/public'
-import { device } from '../../../../../../utils/constants/mediaQueries'
-
 import { Card as C } from '../style'
+import { homeAssets } from 'assets/public'
+import { device } from 'utils/constants/mediaQueries'
+import { client } from 'utils/routes/client'
 
 export default () => {
   return (
@@ -30,7 +29,7 @@ export default () => {
           <br />
           <span>Resources</span>
         </div>
-        <Link to={client.advice.buying} />
+        {/* <Link to={client.advice.buying} /> */}
       </Card>
         <Card bg={homeAssets.sale}>
         <div className="rmc-crde">

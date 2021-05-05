@@ -9,9 +9,9 @@ export default () => {
       <div className="nav-content">
         <MainLinks />
       </div>
-      <div className='nav-language'>
+      {/* <div className='nav-language'>
         <button>English</button>
-      </div>
+      </div> */}
     </Container>
   )
 }

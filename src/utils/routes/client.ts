@@ -9,11 +9,11 @@ export const client = {
     team: "/about-us/our-team",
     faqs: "/about-us/faqs",
   },
-  properties: {
-    main: "/properties",
-    find: "/properties/find-a-home",
-    report: "/properties/report-a-listing",
-  },
+  // properties: {
+  //   main: "/properties",
+  //   find: "/properties/find-a-home",
+  //   report: "/properties/report-a-listing",
+  // },
   contact: {
     main: "/contact",
     sell: "/contact/cash-for-your-house",
@@ -24,7 +24,7 @@ export const client = {
   advice: {
     main: "/advice",
     glossary: "/advice/real-estate-glossary",
-    buying: "/advice/buying-advice",
+    // buying: "/advice/buying-advice",
     selling: "/advice/selling-advice",
   },
   buying_advice: {
@@ -80,4 +80,4 @@ export const getClientRoutesArray = () => {
   return arr;
 };
 
-export const appProjectRoute = (id: string) => `${client.properties}/${id}`;
+// export const appProjectRoute = (id: string) => `${client.properties}/${id}`;

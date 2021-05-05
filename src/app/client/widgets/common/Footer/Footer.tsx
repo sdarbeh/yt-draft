@@ -53,7 +53,7 @@ export default () => {
             <p className="fl-t">Real Estate Resources</p>
             <div>
               <Link to={client.advice.selling}>Home Seller Resources</Link>
-              <Link to={client.advice.buying}>Home Buyer Resources</Link>
+              {/* <Link to={client.advice.buying}>Home Buyer Resources</Link> */}
               <Link to={client.advice.glossary}>Real Estate Glossary</Link>
               <Link to={client.calculators.main}>Mortgage Calculators</Link>
             </div>

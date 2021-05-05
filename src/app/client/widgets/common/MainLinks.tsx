@@ -9,7 +9,7 @@ export default ({ regLinks }: any) => {
   }
   return (
     <>
-      <Main to={client.properties.main}>Find a Home</Main>
+      {/* <Main to={client.properties.main}>Find a Home</Main> */}
       <Main to={client.contact.sell}>Cash For Your House</Main>
       <Main to={client.hiw}>How It Works</Main>
       <Main to={client.about.main}>About YTP</Main>

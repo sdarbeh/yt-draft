@@ -21,7 +21,7 @@ export default (p: any) => {
           <div>
             <NavLink to={client.legal.fair_housing}>Fair Housing Act</NavLink>
             <NavLink to={client.advice.main}>Resources</NavLink>
-            <button>Español</button>
+            {/* <button>Español</button> */}
             <NavLink to={client.calculators.main}>Calculators</NavLink>
           </div>
         </nav>

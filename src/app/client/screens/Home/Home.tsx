@@ -24,7 +24,7 @@ export default () => {
         </div>
       </HomeHero>
       <Main hideNavigator>
-        <h3>(Homes goes here)</h3>
+        <h3>(placeholder for some cool stuff)</h3>
         <About />
         <Resources />
       </Main>

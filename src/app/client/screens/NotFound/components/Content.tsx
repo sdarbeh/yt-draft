@@ -29,8 +29,8 @@ export default withRouter(({ location }: any) => {
         <div className="np-content">
           <div>
             <p className="np-ct">Find a Home</p>
-            <Link to={client.properties.main}>Search for Real Estate</Link>
-            <Link to={client.advice.buying}>Buying Advice</Link>
+            {/* <Link to={client.properties.main}>Search for Real Estate</Link> */}
+            {/* <Link to={client.advice.buying}>Buying Advice</Link> */}
             <Link to={client.advice.glossary}>Real Estate Glossary</Link>
           </div>
           <div>

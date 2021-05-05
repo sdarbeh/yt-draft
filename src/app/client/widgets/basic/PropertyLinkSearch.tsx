@@ -12,9 +12,9 @@ export default () => {
         <input type="text" name="properties-search" />
         <button>Search YTP</button>
       </div>
-      <div className="pls-p">
+      {/* <div className="pls-p">
         <Link to={client.properties.main}>Properties <span>(212)</span></Link>
-      </div>
+      </div> */}
     </Container>
   )
 }
