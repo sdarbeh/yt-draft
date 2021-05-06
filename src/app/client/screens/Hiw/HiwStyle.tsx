@@ -1,6 +1,6 @@
 import { PageHero } from "app/client/widgets/basic";
 import styled from "styled-components";
-import { device } from "utils/constants/mediaQueries";
+import { mediaQ } from "utils/constants/media-queries";
 
 export const Hero = styled(PageHero)`
   div.content {
@@ -8,7 +8,7 @@ export const Hero = styled(PageHero)`
     width: calc(100% - 40px);
     height: calc(100% - 80px);
     align-items: flex-end;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       padding: 40px 0;
     }
   }

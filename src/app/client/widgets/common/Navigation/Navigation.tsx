@@ -5,10 +5,10 @@ import { useMediaQuery } from '@material-ui/core';
 // items
 import { Mobile, Desktop } from './components'
 import { xIcon, hamburgerMenuIcon } from 'assets/icons/widgets';
-import { device } from 'utils/constants/mediaQueries';
+import { mediaQ } from 'utils/constants/media-queries';
 
 export default () => {
-  const matches = useMediaQuery(device.tablet),
+  const matches = useMediaQuery(mediaQ.tablet),
     [navActive, setNavActive] = useState(false),
     handleToggle = () => setNavActive((prev: boolean) => !prev)
 

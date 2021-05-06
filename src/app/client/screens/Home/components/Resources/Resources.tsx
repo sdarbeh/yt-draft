@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Card as C } from '../style'
 import { homeAssets } from 'assets/public'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 import { client } from 'utils/routes/client'
 
 export default () => {
@@ -49,7 +49,7 @@ const Container = styled.section`
   row-gap: 10px;
   column-gap: 10px;
   height: 300px;
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     row-gap: 15px;
     column-gap: 15px;
     margin: 0 auto;

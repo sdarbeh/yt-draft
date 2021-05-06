@@ -56,7 +56,7 @@ const Container = styled.div`
       }
     }
     button {
-      font-size: ${p => p.theme.fontSize.small};
+      font-size: ${p => p.theme.font.small};
       background: ${p => p.theme.primary};
       font-weight: 600;
       text-transform: uppercase;

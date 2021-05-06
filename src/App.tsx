@@ -1,12 +1,12 @@
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { DisplayController } from 'app/controllers';
+import { HashRouter as Router } from 'react-router-dom'
 // routes
 import Client from './app/client/Route'
-import { AccessibilityModal } from './app/global/smart';
 
 export default () => {
   return (
     <Router>
-      <AccessibilityModal />
+      <DisplayController />
       <Client />
     </Router>
   )

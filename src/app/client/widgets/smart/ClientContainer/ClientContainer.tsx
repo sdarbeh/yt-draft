@@ -3,7 +3,7 @@ import { Logo } from 'app/global/basic';
 import { PageTitle, AccessibilityController } from 'app/global/smart';
 import React, { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom'
-import { device } from 'utils/constants/mediaQueries';
+import { mediaQ } from 'utils/constants/media-queries';
 import { client } from 'utils/routes/client';
 import { Navigation, Footer } from '../../common'
 import { Container, Header, HeadAction, HeaderContent, Content } from './ClientContainerStyle'
@@ -17,7 +17,7 @@ interface props {
 }
 
 export default ({ children, pageTitle }: props) => { 
-  const matches = useMediaQuery(device.tablet) 
+  const matches = useMediaQuery(mediaQ.tablet) 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

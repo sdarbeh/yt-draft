@@ -1,10 +1,10 @@
 import { createStore, combineReducers, compose } from "redux";
-import { fontSize, theme, accessibilityModal } from "./reducers";
+import { app_theme } from './app'
+import { accessibility_modal } from './state'
 
 const rootReducer = combineReducers({
-  fontSize,
-  theme,
-  accessibilityModal
+  app_theme,
+  accessibility_modal
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

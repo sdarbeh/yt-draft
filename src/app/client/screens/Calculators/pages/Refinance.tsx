@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { useForm } from 'react-hook-form'
 import { cash, decimal, term } from '../components/options';
-import { Input, FormButton } from 'app/global/form';
+import { Input } from 'app/global/form';
+import { FormButton } from  'app/global/form-widgets'
 import { CalcContainer } from '../components';
 // items
 
@@ -27,8 +28,10 @@ export default () => {
               element='input'
               displayName='Current loan balance ($)'
               name='balance'
-              placeholder='215800'
-              options={cash.options}
+              options={{
+                ...cash.options,
+                placeholder: '215800'
+              }}
               refs={register(cash.validator)}
             />
           </div>
@@ -37,8 +40,10 @@ export default () => {
               element='input'
               displayName='Current Interest rate (%)'
               name='cur_rate'
-              placeholder='3.92'
-              options={decimal.options}
+              options={{
+                ...decimal.options,
+                placeholder: '3.92'
+              }}
               refs={register(decimal.validator)}
             />
           </div>
@@ -50,8 +55,10 @@ export default () => {
               element='input'
               displayName='New interest rate (%)'
               name='new_rate'
-              placeholder='3.92'
-              options={decimal.options}
+              options={{
+                ...decimal.options,
+                placeholder: '3.92'
+              }}
               refs={register(decimal.validator)}
             />
           </div>
@@ -60,8 +67,10 @@ export default () => {
               element='input'
               displayName='Estimated property value ($)'
               name='property'
-              placeholder='275100'
-              options={cash.options}
+              options={{
+                ...cash.options,
+                placeholder: '275100'
+              }}
               refs={register(cash.validator)}
             />
           </div>
@@ -70,8 +79,10 @@ export default () => {
               element='input'
               displayName='Estimated loan amount ($)'
               name='loan'
-              placeholder='2163'
-              options={cash.options}
+              options={{
+                ...cash.options,
+                placeholder: '2163'
+              }}
               refs={register(cash.validator)}
             />
           </div>
@@ -109,7 +120,7 @@ const Container = styled(CalcContainer)`
     row-gap: 10px;
   }
   p.c-grid-t {
-    font-size: ${p => p.theme.fontSize.large};
+    font-size: ${p => p.theme.font.large};
     opacity: .5;
     font-weight: 600;
   }

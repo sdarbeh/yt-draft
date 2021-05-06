@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { device } from '../../../../../../utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 const slideFromBottom = () => keyframes`
     0% {
@@ -20,7 +20,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    @media ${device.tablet} { 
+    @media ${mediaQ.tablet} { 
         padding-bottom: 30px;
     }
 `
@@ -33,7 +33,7 @@ export const Content = styled.div`
     width: 95%;
     height: 100%;
     max-width: 400px;
-    @media ${device.tablet} { 
+    @media ${mediaQ.tablet} { 
         border-radius: 10px;
     }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export const Container = styled.div`
   background: ${p => p.theme.bravo};
@@ -9,7 +9,7 @@ export const Container = styled.div`
     border-radius: 10px;
   }
   div.calc-nav {
-    font-size: ${p => p.theme.fontSize.small};
+    font-size: ${p => p.theme.font.small};
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: max-content;
@@ -44,13 +44,13 @@ export const Container = styled.div`
     width: max-content;
   }
   div.calc-legal {
-    font-size: ${p => p.theme.fontSize.xsmall};
+    font-size: ${p => p.theme.font.xsmall};
     opacity: .5;
     margin: 40px 0 0 0;
     font-style: italic;
     max-width: 450px;
   }
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     div.calc-content {
       display: grid;
       grid-template-columns: 250px 1fr;

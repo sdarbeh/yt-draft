@@ -1,6 +1,6 @@
 import { CenteredDiv } from 'app/global/basic'
+import { useAccessibilltyModal } from 'app/hooks/state'
 import { accessibiltyIcon } from 'assets/icons/widgets'
-import { useAccessibilltyModal } from 'hooks'
 import React from 'react'
 import styled from 'styled-components'
 

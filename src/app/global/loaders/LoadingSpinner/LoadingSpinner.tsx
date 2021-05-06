@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { useThemeMode } from "hooks/theme";
+import { useThemeMode } from "app/hooks/theme";
 import React from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -12,7 +12,7 @@ interface props {
 }
 
 export default ({ size, themed, color }: props) => {
-    const { themeModeColors, themeColors } = useThemeMode()
+    const { themeModeColors, themeColors } = useThemeMode() as any
 
     const sizing = size ? size : 30
 

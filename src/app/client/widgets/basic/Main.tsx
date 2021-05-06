@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Navigator } from 'app/global/smart'
-import { device, maxWith } from 'utils/constants/mediaQueries'
+import { mediaQ, controls } from 'utils/constants/media-queries'
 
 interface p {
   children: any;
@@ -29,11 +29,11 @@ const Main = styled.main`
   div.navigator {
     padding: 25px 0 50px 0;
   }
-  @media ${device.tablet} { 
-    max-width: ${maxWith};
+  @media ${mediaQ.tablet} { 
+    max-width: ${controls.maxDesktopWidth};
     margin: 0 auto;
   }
-  @media ${device.laptopL} {
+  @media ${mediaQ.laptopL} {
     padding: ${(p:m) => p.hide ? '75px 0 100px 0' : '0 0 100px 0'};
   }
 `

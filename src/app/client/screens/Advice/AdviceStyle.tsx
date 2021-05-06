@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Main as M } from '../../widgets/basic'
 import { Link as L } from 'react-router-dom'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export const Main = styled(M)`
   p {
@@ -11,7 +11,7 @@ export const Main = styled(M)`
     display: grid;
     row-gap: 30px;
     grid-template: 'resource' 'main';
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       row-gap: unset;
       grid-template: 'resource main';
       grid-template-columns: 200px 1fr;
@@ -24,7 +24,7 @@ export const Section = styled.div`
   grid-area: main;
   border-bottom: 1px solid ${p => p.theme.bravo};
   p.title {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     font-weight: 700;
   } 
   div.sec-content {

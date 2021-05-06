@@ -21,7 +21,7 @@ export const Ellipsis = styled.div`
     width: 80px;
     height: 80px;
     div {
-        background: ${props => props.theme.currentThemeColor};
+        background: ${props => props.theme.primary};
         box-shadow: ${props => props.theme.btnShadow};
         position: absolute;
         top: 33px;

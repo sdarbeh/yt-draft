@@ -1,7 +1,7 @@
 import { Main as M } from 'app/client/widgets/basic'
 import { homeAssets } from 'assets/public'
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 import { getTimeOfDay } from 'utils/helpers/date'
 
 const hero = () => {
@@ -72,7 +72,7 @@ export const HomeHero = styled.div`
       opacity: .5
     }
   }
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     background-size: 100%;
     height: calc(100vh - 180px); // 60px header
   }
@@ -84,7 +84,7 @@ export const Main = styled(M)`
   h3 {
     text-align: center;
   }
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     row-gap: 150px;
   }
 `

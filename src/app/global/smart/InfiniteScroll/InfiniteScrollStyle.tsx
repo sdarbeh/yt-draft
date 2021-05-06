@@ -31,7 +31,7 @@ const expand = () => keyframes`
 
 export const EndMessage = styled.div`
   animation: ${props => fadein} 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  font-size: ${props => props.theme.fontSize.xsmall};
+  font-size: ${props => props.theme. font.xsmall};
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ export const EndMessage = styled.div`
 
 export const Refresh = styled.div`
   animation: ${props => expand} 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  font-size: ${props => props.theme.fontSize.xsmall};
+  font-size: ${props => props.theme. font.xsmall};
   margin: 10px;
   opacity: .6;
   display: flex;

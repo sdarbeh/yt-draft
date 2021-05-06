@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { device } from 'utils/constants/mediaQueries';
+import { mediaQ } from 'utils/constants/media-queries';
 
 export const Container = styled.div`
     padding: 60px 0 20px 0;
     width: 100%;
     height: calc(100vh - 80px);
-    @media ${device.tablet} { 
+    @media ${mediaQ.tablet} { 
         padding-top: 100px;
     }
 `
@@ -22,9 +22,9 @@ export const Header = styled.header`
 export const HeadAction = styled.div`
     display: none;
     opacity: 0;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
         background-color: ${props => props.theme.primary};
-        font-size: ${p => p.theme.fontSize.small};
+        font-size: ${p => p.theme.font.small};
         color: ${p => p.theme.globalColors.black};
         display: block;
         opacity: 1;
@@ -54,8 +54,8 @@ export const HeaderContent = styled.div`
     width: calc(100% - 40px);
     height: calc(60px - 20px);
     box-shadow: 0px 7px 17px -5px ${p => p.theme.sBravo};
-    @media ${device.tablet} { 
-        font-size: ${p => p.theme.fontSize.large};
+    @media ${mediaQ.tablet} { 
+        font-size: ${p => p.theme.font.large};
         justify-content: start;
         height: calc(70px - 20px);
     }
@@ -64,7 +64,7 @@ export const HeaderContent = styled.div`
 export const Content = styled.div`
     width: 100%;
     min-height: calc(100vh - 60px);
-    @media ${device.tablet} { 
+    @media ${mediaQ.tablet} { 
         min-height: calc(100vh - 100px);
     }
 `

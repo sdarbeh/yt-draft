@@ -4,7 +4,7 @@ import { ClientContainer } from 'app/client/widgets/smart'
 import { contactAssets } from 'assets/public'
 import React from 'react'
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export default () => {
   return (
@@ -30,7 +30,7 @@ const Hero = styled(PageHero)`
     width: calc(100% - 40px);
     height: calc(100% - 80px);
     align-items: flex-end;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       padding: 40px 0;
     }
   }
@@ -39,7 +39,7 @@ const Hero = styled(PageHero)`
 const Heading = styled.div`
   margin-bottom: 50px;
   h2 {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     margin: 0 0 15px 0;
   }
   p {

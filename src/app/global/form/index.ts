@@ -1,6 +1,3 @@
-export { default as Input } from './Input/Input'
+export { default as Input } from './Input'
 export { default as PasswordInput } from './PasswordInput'
-export { default as ErrMsg } from './ErrMsg'
-export { default as FormButton } from './FormButton'
-export { default as SubmitError } from './SubmitError'
-export { default as Terms } from './Terms'
+export { default as RangeSlider } from './RangeSlider'

@@ -71,7 +71,7 @@ const Container = styled.div`
     font-weight: 700;
   }
   p.tmc-title, p.tmc-desc {
-    font-size: ${p => p.theme.fontSize.small};
+    font-size: ${p => p.theme.font.small};
     opacity: .8
   }
   p.tmc-desc {

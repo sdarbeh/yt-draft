@@ -2,14 +2,14 @@ import { useMediaQuery } from '@material-ui/core'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 import { getHashPaths } from 'utils/helpers/methods'
 import { client } from 'utils/routes/client'
 
 const { glossary, selling } = client.advice
 
 export default (p: any) => {
-  const matches = useMediaQuery(device.tablet)
+  const matches = useMediaQuery(mediaQ.tablet)
 
   if (matches) return (
     <Content
@@ -87,7 +87,7 @@ export const Nav = styled.div`
     width: max-content;
   }
   a.rnav-title {
-    font-size: ${p => p.theme.fontSize.xlarge};
+    font-size: ${p => p.theme.font.xlarge};
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
@@ -116,7 +116,7 @@ export const Nav = styled.div`
       text-decoration: underline;
     }
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     padding-right: 30px;
     border-right: 1px solid ${p => p.theme.bravo};
   }

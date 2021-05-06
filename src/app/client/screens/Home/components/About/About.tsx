@@ -1,12 +1,10 @@
+import { CenteredDiv } from 'app/global/basic'
+import { homeAssets } from 'assets/public'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { homeAssets } from '../../../../../../assets/public'
-import { device } from '../../../../../../utils/constants/mediaQueries'
-import { client } from '../../../../../../utils/routes/client'
-
-// items
-import { CenteredDiv } from '../../../../../global/basic'
+import { mediaQ } from 'utils/constants/media-queries'
+import { client } from 'utils/routes/client'
 import { Card as C } from '../style'
 
 
@@ -63,13 +61,13 @@ const Container = styled.section`
     row-gap: 40px;
   }
   div.hsec-title {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     font-weight: 600;
     text-transform: uppercase;
     flex-direction: column;
     height: max-content;
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     grid-template-columns: 200px 1fr;
     column-gap: 50px; 
     &, div.h-cards {
@@ -109,5 +107,5 @@ const Card = styled.div`
 const CardImg = styled(C)`
   width: 100%;
   height: 275px;
-  font-size: ${p => p.theme.fontSize.jumbo};
+  font-size: ${p => p.theme.font.jumbo};
 `

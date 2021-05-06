@@ -1,6 +1,6 @@
 import { PageHero } from "app/client/widgets/basic"
 import styled from "styled-components"
-import { device } from "utils/constants/mediaQueries"
+import { mediaQ } from "utils/constants/media-queries"
 
 export const Hero = styled(PageHero)`
   div.content {
@@ -8,7 +8,7 @@ export const Hero = styled(PageHero)`
     width: calc(100% - 40px);
     height: calc(100% - 80px);
     align-items: flex-end;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       padding: 40px 0;
     }
   }
@@ -18,7 +18,7 @@ export const MainContent = styled.div`
   display: grid;
   grid-template: 'content''links';
   row-gap: 75px;
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     row-gap: unset;
     grid-template: 'links content';
     grid-template-columns: 300px 1fr;
@@ -37,7 +37,7 @@ export const PopularLinks = styled.div`
     width: max-content;
   }
   p.np-title {
-    font-size: ${p => p.theme.fontSize.xlarge};
+    font-size: ${p => p.theme.font.xlarge};
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -48,7 +48,7 @@ export const PopularLinks = styled.div`
     }
   }
   p.np-ct {
-    font-size: ${p => p.theme.fontSize.large};
+    font-size: ${p => p.theme.font.large};
     color: ${p => p.theme.primary};
     padding-left: 15px;
     font-weight: 600;
@@ -62,7 +62,7 @@ export const PopularLinks = styled.div`
       text-decoration: underline;
     }
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     border-top: unset;
     padding-top: unset;
     border-right: 1px solid ${p => p.theme.bravo};
@@ -71,12 +71,12 @@ export const PopularLinks = styled.div`
 `
 
 export const Page = styled.div`
-  font-size: ${p => p.theme.fontSize.large};
+  font-size: ${p => p.theme.font.large};
   span {
     font-weight: 700;
   }
   p.n-title {
-    font-size: ${p => p.theme.fontSize.xlarge};
+    font-size: ${p => p.theme.font.xlarge};
     text-transform: uppercase;
     margin-bottom: 5px;
   }
@@ -85,7 +85,7 @@ export const Page = styled.div`
   }
   p.n-search {
     margin-bottom: 25px;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       margin-bottom: 50px;
     }
   }
@@ -96,7 +96,7 @@ export const Prediction = styled.div`
   align-items: center;
   margin-bottom: 30px;
   a {
-    font-size: ${p => p.theme.fontSize.xlarge};
+    font-size: ${p => p.theme.font.xlarge};
     color: ${p => p.theme.primary};
     text-decoration: underline;
     text-transform: capitalize;

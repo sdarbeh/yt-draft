@@ -15,7 +15,7 @@ export const Section = styled.div`
   grid-template-rows: 20px 1fr;
   row-gap: 30px;
   div.title {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     font-weight: 700;
   } 
   div.sec-content {
@@ -40,13 +40,13 @@ export const Contact = styled.div`
     flex-direction: column;
   }
   p.about-c-t {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     font-weight: 700;
   }
   div.about-c-c {
     margin: 10px 0;
     p {
-      font-size: ${p => p.theme.fontSize.large};
+      font-size: ${p => p.theme.font.large};
       margin-bottom: 20px;
     }
   }

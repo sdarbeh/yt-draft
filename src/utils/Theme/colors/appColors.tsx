@@ -1,6 +1,9 @@
-import { themeModeColors } from './themeModes'
 
 // APP COLORS
+
+import { themeModeColors } from "./themeModes"
+
+
 // global colors - used through app
 export const globalColors = {
     error: "rgb(199, 0, 57)",
@@ -26,4 +29,4 @@ export const themeColors = {
         secondary: '',
         accent: ''
     }
-} 
+} as any

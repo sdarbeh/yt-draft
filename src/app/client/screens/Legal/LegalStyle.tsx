@@ -8,11 +8,11 @@ export const Main = styled(M)`
   }
   a.legal-s-t {
     color: ${p => p.theme.primary};
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     font-weight: 700;
   }
   p.legal-s-d{
-    font-size: ${p => p.theme.fontSize.large};
+    font-size: ${p => p.theme.font.large};
     margin-top: 5px;
   }
 `
@@ -24,7 +24,7 @@ export const Container = styled.div`
   grid-template-rows: 40px 1fr;
   row-gap: 30px;
   h2 {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     margin: 0;
   }
   span, a {

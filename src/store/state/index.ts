@@ -1,0 +1,1 @@
+export { default as accessibility_modal } from './accessibiltyModal/reducer'

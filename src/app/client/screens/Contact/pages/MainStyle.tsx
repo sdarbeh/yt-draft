@@ -3,7 +3,7 @@ import { Link as L } from 'react-router-dom'
 import { PageHero } from 'app/client/widgets/basic'
 import { CenteredDiv } from 'app/global/basic'
 import { contactAssets } from 'assets/public'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export const Hero = styled(PageHero)`
   div.content {
@@ -11,7 +11,7 @@ export const Hero = styled(PageHero)`
     width: calc(100% - 40px);
     height: calc(100% - 80px);
     align-items: flex-end;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       padding: 40px 0;
     }
   }
@@ -35,7 +35,7 @@ export const OptContainer = styled.div`
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   row-gap: 50px;
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     grid-template-rows: unset;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
@@ -44,7 +44,7 @@ export const OptContainer = styled.div`
 
 export const Link = styled(L)`
   border: 1px solid;
-  font-size: ${p => p.theme.fontSize.xsmall};
+  font-size: ${p => p.theme.font.xsmall};
   font-weight: 700;
   border-radius: 2px;
   padding: 7px 15px;
@@ -72,7 +72,7 @@ export const OptionCard = styled.div`
     text-transform: uppercase;
   }
   p {
-    font-size: ${p => p.theme.fontSize.small};
+    font-size: ${p => p.theme.font.small};
     margin: 10px 0 20px 0;
   }
   &.general-q-card {
@@ -81,7 +81,7 @@ export const OptionCard = styled.div`
       background-size: cover;
     }
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     display: grid;
     grid-template-columns: 200px 1fr;
     div:first-child {
@@ -115,7 +115,7 @@ export const Report = styled.div`
     margin-bottom: 40px;
   }
   p.title {
-    font-size: ${p => p.theme.fontSize.xlarge};
+    font-size: ${p => p.theme.font.xlarge};
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -125,9 +125,9 @@ export const Report = styled.div`
     width: 100%;
   }
   p.desc {
-    font-size: ${p => p.theme.fontSize.small};
+    font-size: ${p => p.theme.font.small};
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     max-width: 650px;
     margin: 70px auto 0 auto;
     display: flex;

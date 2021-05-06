@@ -37,3 +37,15 @@ export const messageValidator = {
   minLength: 30,
   maxLength: 500,
 };
+
+export const checkLength = (str: string, min:number, max:number) => {
+  const length = str.length
+  return length >= min && length <= max
+}
+
+export const hasNumber = (str: string) => str.match(/\d+/g) ? true : false
+
+export const containSpecialChar = (str: string) => {
+  const format = /[!@#$%^&*()_+\-=\]{};':"\\|,.<>?]+/;
+  return format.test(str)
+}

@@ -4,7 +4,7 @@ import { ClientContainer } from 'app/client/widgets/smart'
 import { contactAssets } from 'assets/public'
 import React from 'react'
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export default () => {
   return (
@@ -36,7 +36,7 @@ export const Hero = styled(PageHero)`
     flex-direction: column;
   }
   h1 {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     margin-bottom: 10px;
     line-height: 35px;
   }
@@ -54,10 +54,10 @@ export const Main = styled(M)`
   div.navigator {
     padding-bottom: 20px;
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     margin: -100px auto 0 auto;
   }
-  @media ${device.laptopL} {
+  @media ${mediaQ.laptopL} {
     padding: 0 0 30px 0;
   }
 `
@@ -76,6 +76,6 @@ export const End = styled.div`
     margin-bottom: 5px;
   }
   p.text {
-    font-size: ${p => p.theme.fontSize.small};
+    font-size: ${p => p.theme.font.small};
   }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export const Container = styled.footer`
   background: ${p => p.theme.sBravo};
@@ -7,7 +7,7 @@ export const Container = styled.footer`
   width: calc(100% - 100px);
   div.f-content {
     margin-bottom: 50px;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       max-width: max-content;
       display: grid;
       grid-template-columns: 250px 1fr;
@@ -18,7 +18,7 @@ export const Container = styled.footer`
   div.legal {
     text-align: center;
     span {
-      font-size: ${p => p.theme.fontSize.jumbo};
+      font-size: ${p => p.theme.font.jumbo};
       color: ${p => p.theme.primary};
       width: 100%;
       display: block;
@@ -26,7 +26,7 @@ export const Container = styled.footer`
     }
     p {
       color: ${p => p.theme.medium};
-      font-size: ${p => p.theme.fontSize.xsmall};
+      font-size: ${p => p.theme.font.xsmall};
       margin-top: 10px;
     }
   }
@@ -56,7 +56,7 @@ export const Sidebar = styled.div`
     width: 15px;
     height: 15px;
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     margin: 0;
     height: max-content;
   }
@@ -68,7 +68,7 @@ export const Main = styled.div`
     width: max-content;
   }
   p.fl-t {
-    font-size: ${p => p.theme.fontSize.large};
+    font-size: ${p => p.theme.font.large};
     color: ${p => p.theme.primary};
     text-transform: uppercase;
     font-weight: 700;
@@ -99,7 +99,7 @@ export const Main = styled.div`
       text-decoration: underline;
     }
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     max-width: max-content;
     margin-top: unset;
     display: grid;

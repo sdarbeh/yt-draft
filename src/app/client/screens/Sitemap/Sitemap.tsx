@@ -4,7 +4,7 @@ import { sitemapAssets } from 'assets/public';
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
-import { device } from 'utils/constants/mediaQueries';
+import { mediaQ } from 'utils/constants/media-queries';
 import { client } from 'utils/routes/client';
 
 export default () => {
@@ -98,7 +98,7 @@ const Hero = styled(PageHero)`
     width: calc(100% - 40px);
     height: calc(100% - 80px);
     align-items: flex-end;
-    @media ${device.tablet} {
+    @media ${mediaQ.tablet} {
       padding: 40px 0;
     }
   }
@@ -118,7 +118,7 @@ const Main = styled(M)`
   div.sm-s {
     p {
       color: ${p => p.theme.primary};
-      font-size: ${p => p.theme.fontSize.xlarge};
+      font-size: ${p => p.theme.font.xlarge};
       text-transform: uppercase;
       font-weight: 700;
       margin-bottom: 15px;
@@ -131,7 +131,7 @@ const Main = styled(M)`
   div.sitemap-a-indent {
     padding-left: 15px;
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     div.sitemap-content {
       grid-template-columns: repeat(3, 1fr);
       row-gap: 50px;

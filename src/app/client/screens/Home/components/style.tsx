@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../../../../utils/constants/mediaQueries";
+import { mediaQ } from "utils/constants/media-queries";
 
 interface h {
   bg: string;
@@ -14,7 +14,7 @@ export const Card = styled.div`
   rgba(0, 0, 0, 0.4)
   ),
   url(${(p: h) => p.bg});
-  font-size: ${p => p.theme.fontSize.xlarge};
+  font-size: ${p => p.theme.font.xlarge};
   box-shadow: ${p => p.theme.btnShadow};
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +31,7 @@ export const Card = styled.div`
   span {
     text-shadow: 2px 2px 3px rgb(0 0 0 / 23%);
   }
-  @media ${device.tablet} {
-    font-size: ${p => p.theme.fontSize.jumbo};
+  @media ${mediaQ.tablet} {
+    font-size: ${p => p.theme.font.jumbo};
   }
 `

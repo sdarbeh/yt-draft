@@ -1,8 +1,9 @@
-import { Input, ErrMsg, Terms, FormButton } from "app/global/form";
+import { Input } from "app/global/form";
+import { ErrMsg, FormButton, Terms } from "app/global/form-widgets";
 import React from "react";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
-import { device } from "utils/constants/mediaQueries";
+import { mediaQ } from "utils/constants/media-queries";
 import { nameValidator, emailValidator, phoneValidator, messageValidator } from "utils/validators";
 
 
@@ -88,7 +89,7 @@ const Container = styled.div`
         padding: 20px;
         display: grid;
         row-gap: 20px;
-        @media ${device.tablet} { 
+        @media ${mediaQ.tablet} { 
             grid-template-columns: repeat(2, 1fr);
             column-gap: 20px;
         }

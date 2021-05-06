@@ -1,4 +1,5 @@
-import { Input, FormButton } from 'app/global/form';
+import { Input } from 'app/global/form';
+import { FormButton } from 'app/global/form-widgets'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { CalcContainer } from '../components';
@@ -24,8 +25,10 @@ export default () => {
             element='input'
             displayName='Interest rate (%)'
             name='rate'
-            placeholder='3.92'
-            options={decimal.options}
+            options={{
+              ...decimal.options,
+              placeholder: '3.92'
+            }}
             refs={register(decimal.validator)}
           />
         </div>
@@ -34,8 +37,10 @@ export default () => {
             element='input'
             displayName='Home sale price ($)'
             name='home'
-            placeholder='265100'
-            options={cash.options}
+            options={{
+              ...cash.options,
+              placeholder: '265100'
+            }}
             refs={register(cash.validator)}
           />
         </div>
@@ -44,8 +49,10 @@ export default () => {
             element='input'
             displayName='Mortage amount ($)'
             name='loan'
-            placeholder='275100'
-            options={cash.options}
+            options={{
+              ...cash.options,
+              placeholder: '275100'
+            }}
             refs={register(cash.validator)}
           />
         </div>
@@ -54,8 +61,10 @@ export default () => {
             element='input'
             displayName='Annual property taxes ($)'
             name='tax'
-            placeholder='2163'
-            options={cash.options}
+            options={{
+              ...cash.options,
+              placeholder: '2163'
+            }}
             refs={register(cash.validator)}
           />
         </div>

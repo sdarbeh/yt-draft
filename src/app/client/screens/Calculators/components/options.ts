@@ -1,4 +1,4 @@
-import { decimalRegex } from "../../../../../utils/validators";
+import { decimalRegex } from "utils/validators";
 
 export const cash = {
   options: {

@@ -15,7 +15,7 @@ export const Container = styled.div`
 `
 
 export const Message = styled.div`
-    font-size: ${props => props.theme.fontSize.small};
+    font-size: ${props => props.theme. font.small};
     color: ${props => props.theme.medium};
     font-weight: 600;
     font-style: italic;

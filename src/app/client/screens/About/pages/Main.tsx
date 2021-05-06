@@ -4,7 +4,7 @@ import { Link } from '../AboutStyle'
 import { aboutAssets } from 'assets/public'
 import { client } from 'utils/routes/client'
 import styled from 'styled-components'
-import { device } from 'utils/constants/mediaQueries'
+import { mediaQ } from 'utils/constants/media-queries'
 
 export default () => {
   return (
@@ -66,7 +66,7 @@ const Section = styled.div`
     row-gap: 10px;
   }
   p.title {
-    font-size: ${p => p.theme.fontSize.jumbo};
+    font-size: ${p => p.theme.font.jumbo};
     font-weight: 700;
   }
   div.m-content {
@@ -87,7 +87,7 @@ const Section = styled.div`
       background-size: cover;
     }
   }
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     grid-template: unset;
     row-gap: unset;
     grid-template-columns: repeat(2, 1fr);

@@ -45,7 +45,7 @@ const Content = styled.div`
       font-weight: 600;
       opacity: .6;
       padding: 0 8px;
-      font-size: ${props => props.theme.fontSize.xsmall};
+      font-size: ${props => props.theme. font.xsmall};
     }
     div {
       padding: 10px 0 30px 0;
@@ -56,7 +56,7 @@ const Content = styled.div`
       justify-content: flex-start;
     }
     a, button {
-      font-size: ${props => props.theme.fontSize.large};
+      font-size: ${props => props.theme. font.large};
       padding: 8px;
       border-radius: 5px;
     }
@@ -68,7 +68,7 @@ const Content = styled.div`
     }
   }
   button.nav-access {
-    font-size: ${props => props.theme.fontSize.large};
+    font-size: ${props => props.theme. font.large};
     display: grid;
     grid-template-columns: 25px 1fr;
     column-gap: 20px;

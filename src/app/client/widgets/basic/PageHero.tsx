@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device, maxWith } from 'utils/constants/mediaQueries'
+import { mediaQ, controls } from 'utils/constants/media-queries'
 
 interface p {
   bg: string;
@@ -92,7 +92,7 @@ export const Hero = styled.div`
   }
   // end with naviagtion
   h1 {
-    font-size: ${p => p.theme.fontSize.xxjumbo};
+    font-size: ${p => p.theme.font.xxjumbo};
     line-height: 50px;
     text-transform: uppercase;
     text-shadow: 2px 2px 3px rgb(0 0 0 / 23%);
@@ -101,10 +101,10 @@ export const Hero = styled.div`
   p, h1 {
     margin: 0;
   }
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     background-size: 100%;
     div.content {
-      max-width: ${maxWith};
+      max-width: ${controls.maxDesktopWidth};
     }
     div.hero-nav {
       max-width: 400px;

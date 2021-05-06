@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "utils/constants/mediaQueries";
+import { mediaQ } from "utils/constants/media-queries";
 
 
 export const Container = styled.div`
@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: grid;
   row-gap: 40px;
   grid-template: 'calculator''results';
-  @media ${device.tablet} { 
+  @media ${mediaQ.tablet} { 
     row-gap: unset;
     grid-template: 'calculator results';
     grid-template-columns: repeat(2, 1fr);
@@ -23,7 +23,7 @@ export const Calc = styled.div`
     margin-bottom: 30px;
     width: 100%;
     h1 {
-      font-size: ${p => p.theme.fontSize.jumbo};
+      font-size: ${p => p.theme.font.jumbo};
       margin: 0;
       font-weight: 600;
     }
@@ -34,7 +34,7 @@ export const Calc = styled.div`
     row-gap: 20px;
   }
   input {
-    font-size: ${p => p.theme.fontSize.large};
+    font-size: ${p => p.theme.font.large};
   }
   div.calc-btns {
     margin-top: 30px;
@@ -52,7 +52,7 @@ export const Calc = styled.div`
       width: 150px;
     }
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@ export const Results = styled.div`
   div.no-results {
     flex-direction: column;
     p {
-      font-size: ${p => p.theme.fontSize.xlarge};
+      font-size: ${p => p.theme.font.xlarge};
       font-weight: 600;
       margin-bottom: 5px;
     }
@@ -87,7 +87,7 @@ export const Results = styled.div`
       height: 50%;
     }
   }
-  @media ${device.tablet} {
+  @media ${mediaQ.tablet} {
     border-top: unset;
     padding-top: unset;
     border-left: 1px solid ${p => p.theme.sBravo};

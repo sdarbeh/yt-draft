@@ -1,8 +1,8 @@
+import { usePageScroll } from 'app/hooks/app'
+import { useThemeMode } from 'app/hooks/theme'
 import React, { useEffect } from 'react'
+import { rgbToRgba } from 'utils/helpers/color'
 
-import { useThemeMode } from '../../../../../../hooks/theme'
-import { usePageScroll } from '../../../../../../hooks'
-import { rgbToRgba } from '../../../../../../utils/helpers/color'
 
 //items
 import { Container, Backdrop } from './ModalStyle'
@@ -13,7 +13,7 @@ interface props {
 }
 
 export default ({ children, handleClose }: props) => {
-    const { themeModeColors } = useThemeMode()
+    const { themeModeColors } = useThemeMode() as any
     const { disableScroll, enableScroll } = usePageScroll()
 
     useEffect(() => {

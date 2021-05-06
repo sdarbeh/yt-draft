@@ -1,0 +1,8 @@
+export { default as Title } from './Title'
+export { default as Criteria } from './Criteria'
+export { default as FormCriteria } from './FormCriteria'
+export { default as InputMessage } from './InputMessage'
+export { default as ErrMsg } from './ErrMsg'
+export { default as FormButton } from './FormButton'
+export { default as SubmitError } from './SubmitError'
+export { default as Terms } from './Terms'
