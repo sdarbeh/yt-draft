@@ -23,14 +23,15 @@ export const HeadAction = styled.div`
     display: none;
     opacity: 0;
     @media ${mediaQ.tablet} {
-        background-color: ${props => props.theme.primary};
+        background-color: ${props => props.theme.bravo};
         font-size: ${p => p.theme.font.small};
-        color: ${p => p.theme.globalColors.black};
+        color: ${p => p.theme.charlie};
         display: block;
         opacity: 1;
         padding: 5px 20px;
         span {
             padding: 0 10px;
+            opacity: .5;
         }
         button {
             display: inline;
@@ -38,9 +39,11 @@ export const HeadAction = styled.div`
         a, button {
             text-transform: uppercase;
             letter-spacing: 2px;
+            opacity: .5;
         }
         a:hover, button:hover {
             text-decoration: underline;
+            opacity: 1;
         }
     }
 `
