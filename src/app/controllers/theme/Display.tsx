@@ -14,19 +14,21 @@ const Dislay = (p: any) => {
     <Container {...p}>
       <CenterModal handleClose={close}>
         <div className='display___content'>
-          <div className="display_desc">
-            Customize your font size, color, and background. These settings will be available for all accounts on this browser.
-          </div>
-          <div className="display_ui_container">
-            <div className="display_sec-title">Font size</div>
-            <div className="display__controller">
-              <AppSizeController />
+          <div className="d_content">
+            <div className="display_desc">
+              Customize your font size, color, and background. These settings will be available for all accounts on this browser.
             </div>
-          </div>
-          <div className="display_ui_container">
-            <div className="display_sec-title">Background</div>
-            <div className="display__controller">
-              <ThemeModeController />
+            <div className="display_ui_container">
+              <div className="display_sec-title">Font size</div>
+              <div className="display__controller">
+                <AppSizeController />
+              </div>
+            </div>
+            <div className="display_ui_container">
+              <div className="display_sec-title">Background</div>
+              <div className="display__controller">
+                <ThemeModeController />
+              </div>
             </div>
           </div>
         </div>
@@ -38,15 +40,21 @@ const Dislay = (p: any) => {
 export default Dislay
 
 const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .display___content {
+  .d_content {
     display: grid;
     row-gap: ${p => p.theme.icon.xsmall};
     max-width: 475px;
     padding: ${p => `${p.theme.icon.small} 0`};
     margin: 0 auto;
+  }
+  .display___content {
+    background-color: ${p => p.theme.alpha};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px;
   }
   .display_desc {
     text-align: center;

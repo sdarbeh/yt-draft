@@ -12,9 +12,7 @@ export default () => {
         <p>Our team</p>
       </div>
       <div className='sec-content'>
-        <p>(Description)Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit quae assumenda esse quo id tempora, ipsam iste ratione nisi amet ducimus, et temporibus voluptatibus eaque. Animi vel aliquam possimus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit quae assumenda esse quo id tempora, ipsam iste ratione nisi amet ducimus, et temporibus voluptatibus eaque. Animi vel aliquam possimus.
-        </p>
+        <p>YT Properties is a local and family company based in Tulsa, OK. Logan Thompson, founder and CEO, and his wife Kelsey Thompson are both local Tulsan's, born and raised. They love their city and are passionate about helping the people in it. Logan began his career in construction, which eventually led to his love of real estate and remodeling. YT Properties is Logan and Kelsey's way to help make Tulsa beautiful and to help Tulsa families, one street at a time. Logan and Kelsey love helping their neighbors and remodeling Tulsa's homes. </p>
       </div>
       <div className='sec-team'>
         <TeamMemberCard

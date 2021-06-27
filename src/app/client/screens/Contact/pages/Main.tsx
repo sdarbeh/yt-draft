@@ -23,7 +23,7 @@ export default () => {
             <div />
             <div>
               <h3>Sell your home</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quia maiores aspernatur, totam aliquid accusantium quaerat odit dolor dolorum placeat ut, perspiciatis nemo recusandae praesentium corrupti exercitationem suscipit expedita ratione?</p>
+              <p>We buy houses without the usual hassle. While we usually offer a cash bid for them, you can call us if you have different needs. We love providing excellent solutions for Tulsa families. Are you ready to sell your house to a local, family-owned company?</p>
               <Link to={client.contact.sell}>Sell with confidence</Link>
             </div>
           </Option>

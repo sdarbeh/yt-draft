@@ -48,9 +48,11 @@ export const HomeHero = styled.div`
     background: ${p => p.theme.sBravo};
     padding: 20px;
     border-radius: 3px;
+    max-width: 500px;
+    
   }
   h1 {
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px auto;
   }
   a {
     background: ${p => p.theme.primary};
@@ -81,6 +83,13 @@ export const HomeHero = styled.div`
 export const Main = styled(M)`
   display: grid;
   row-gap: 100px;
+  .desc_sec {
+    display: grid;
+    row-gap: 5px;
+    p {
+      
+    }
+  }
   h3 {
     text-align: center;
   }

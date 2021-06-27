@@ -12,8 +12,7 @@ export default () => {
   return (
     <Container>
       <CenteredDiv className="hsec-title">
-        <p>YT PROPERTIES</p>
-        <p>(SHORT SLOGAN)</p>
+        <p>Learn About YT Properties</p>
       </CenteredDiv>
       <div className="h-cards">
         <Card>
@@ -21,7 +20,7 @@ export default () => {
             <span>Our Passion</span>
           </CardImg>
           <div className="amc-desc">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
+            <p>We love working with local families and are dedicated to finding the right solution for you. YT Properties can help you save money and time when you sell your home.</p>
             <Link to={client.about.company}>Learn more</Link>
           </div>
         </Card>
@@ -45,7 +44,7 @@ export default () => {
             <span>Our Leadership</span>
           </CardImg>
           <div className="amc-desc">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem doloribus corporis ipsam odit adipisci laudantium ex molestias nostru.</p>
+            <p>We're a family business that loves helping other Tulsa Families. We love working with local families and are dedicated to finding the right solution for you.</p>
             <Link to={client.about.team}>Meet our team</Link>
           </div>
         </Card>
@@ -63,7 +62,6 @@ const Container = styled.section`
   div.hsec-title {
     font-size: ${p => p.theme.font.jumbo};
     font-weight: 600;
-    text-transform: uppercase;
     flex-direction: column;
     height: max-content;
   }
@@ -93,6 +91,7 @@ const Card = styled.div`
     padding: 20px;
     display: grid;
     row-gap: 15px;
+    height: calc(100% - 40px);
   }
   a {
     border: 1px solid;

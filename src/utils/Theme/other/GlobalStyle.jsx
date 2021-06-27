@@ -20,6 +20,9 @@ const Global = createGlobalStyle`
     color: ${props => props.theme.primary};
     font-weight: 700;
   }
+  li:before {
+    border: 2px solid ${p => p.theme.primary};
+  }
 `;
 
 export default Global

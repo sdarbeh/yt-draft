@@ -20,8 +20,9 @@ export default () => {
           <ListPropertyForm />
         </Form>
         <End>
-          <p className={'title'}>From listings to showings to negotiations, we're here for you.</p>
-          <p className={'text'}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quos modi, itaque est, in quia impedit quisquam reprehenderit, rerum libero earum quaerat architecto id accusamus porro. Quibusdam numquam quisquam id.</p>
+          <p className={'title'}>From listings, to showings, to negotiations, we're here for you.</p>
+          <p className={'text'}>If you're in the Tulsa area and you want to sell your home fast, without the usual hassle, then give us a call at YT Properties. We pay cash for Tulsa homes as they are, with no repairs, fees, or showings.</p>
+          <p>We know how time-consuming selling a house can be. That's why we offer an alternative for Tulsa home sellers. If you're looking to sell fast to avoid the time and stress or a circumstance like a foreclosure, probate, or more, let our process be your solution. Let us know about your property, and you could have a fair cash bid within 24 hours. </p>
         </End>
       </Main>
     </ClientContainer>
@@ -77,5 +78,6 @@ export const End = styled.div`
   }
   p.text {
     font-size: ${p => p.theme.font.small};
+    margin-bottom: 5px;
   }
 `
