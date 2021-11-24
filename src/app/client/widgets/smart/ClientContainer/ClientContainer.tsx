@@ -35,8 +35,6 @@ export default ({ children, pageTitle }: props) => {
           <span>•</span>
           <Link to={client.advice.main}>Resources</Link>
           <span>•</span>
-          {/* <button>Español</button>
-          <span>•</span> */}
           <Link to={client.calculators.main}>Calculators</Link>
         </HeadAction>
         <HeaderContent>

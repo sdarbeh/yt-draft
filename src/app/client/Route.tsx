@@ -11,7 +11,6 @@ export default () => (
   <Switch>
     <Route path={client.home} exact component={Home} />
     <Route path={client.about.main} component={About} />
-    {/* <Route path={client.properties.main} exact component={Properties} /> */}
     <Route path={client.hiw} component={Hiw} />
     <Route path={client.contact.main} component={Contact} />
 

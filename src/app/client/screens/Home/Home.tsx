@@ -11,7 +11,7 @@ import { client } from 'utils/routes/client'
 
 export default () => {
   return (
-    <ClientContainer pageTitle={'Home'}>
+    <ClientContainer pageTitle='Home'>
       <HomeHero>
         <div className='hero-logo'>
           <span>(HERO LOGO GOES HERE)</span>

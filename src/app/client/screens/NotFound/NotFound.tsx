@@ -3,7 +3,6 @@ import { Hero } from 'app/client/widgets/basic/PageHero'
 import { ClientContainer } from 'app/client/widgets/smart'
 import { PageTitle } from 'app/global/smart'
 import { notFoundAssets } from 'assets/public'
-import React from 'react'
 
 import { Content, Moved } from './components'
 

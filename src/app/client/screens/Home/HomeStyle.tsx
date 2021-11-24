@@ -49,7 +49,6 @@ export const HomeHero = styled.div`
     padding: 20px;
     border-radius: 3px;
     max-width: 500px;
-    
   }
   h1 {
     margin: 0 auto 20px auto;
@@ -86,9 +85,6 @@ export const Main = styled(M)`
   .desc_sec {
     display: grid;
     row-gap: 5px;
-    p {
-      
-    }
   }
   h3 {
     text-align: center;

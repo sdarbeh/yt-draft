@@ -1,6 +1,5 @@
 import { CenteredDiv } from 'app/global/basic'
 import { homeAssets } from 'assets/public'
-import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { mediaQ } from 'utils/constants/media-queries'

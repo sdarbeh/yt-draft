@@ -1,6 +1,5 @@
 import { Input } from "app/global/form";
 import { ErrMsg, FormButton, Terms } from "app/global/form-widgets";
-import React from "react";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import { mediaQ } from "utils/constants/media-queries";
